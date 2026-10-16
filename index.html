@@ -1,0 +1,1266 @@
+<!doctype html>
+<!--
+  Free website template by 8B · https://github.com/8bsite/design-studio-website-template
+  MIT License (code) · Photos: Unsplash License, see CREDITS.md · Fonts: Google Fonts (OFL)
+  One HTML file, no build step. Notes for people and AI agents: README.md and AGENTS.md.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Onda — brand, product and AI studio</title>
+<meta name="description" content="Onda is an independent brand, product and AI studio in Lisbon and Brooklyn. We make the things people come back to.">
+<meta name="generator" content="8B Templates">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Onda — brand, product and AI studio">
+<meta property="og:description" content="Onda is an independent brand, product and AI studio in Lisbon and Brooklyn. We make the things people come back to.">
+<meta property="og:image" content="https://your-domain.example/preview.png" data-8b-placeholder="og-image">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2064%2064'%3E%3Crect%20width%3D'64'%20height%3D'64'%20rx%3D'14'%20fill%3D'%236c3cff'%2F%3E%3Ctext%20x%3D'32'%20y%3D'45'%20font-family%3D'Arial%2CHelvetica%2Csans-serif'%20font-size%3D'38'%20font-weight%3D'700'%20text-anchor%3D'middle'%20fill%3D'%23ffffff'%3EO%3C%2Ftext%3E%3C%2Fsvg%3E" data-8b-placeholder="favicon">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="https://fonts.gstatic.com/s/gabarito/v9/QGYtz_0dZAGKJJ4t3HtoW4U.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmf-HY.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+/* latin-ext */
+@font-face {
+  font-family: 'Gabarito';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/gabarito/v9/QGYtz_0dZAGKJJ4t3HtmW4XUng.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Gabarito';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/gabarito/v9/QGYtz_0dZAGKJJ4t3HtoW4U.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Onest';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmS-HY6EQ.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Onest';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmb-HY6EQ.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* math */
+@font-face {
+  font-family: 'Onest';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xnj-HY6EQ.woff2) format('woff2');
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-208E, U+2090-209C, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+/* symbols */
+@font-face {
+  font-family: 'Onest';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xnx-HY6EQ.woff2) format('woff2');
+  unicode-range: U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F900-1F90B, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C, U+1FA80-1FA89, U+1FA8F-1FAC6, U+1FACE-1FADC, U+1FADF-1FAE9, U+1FAF0-1FAF8, U+1FB00-1FBFF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Onest';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmQ-HY6EQ.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Onest';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmR-HY6EQ.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Onest';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmf-HY.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style data-8b-part="layers">
+@layer tokens, base, atoms, layout, sections, scenes;
+</style>
+<style data-8b-part="tokens">
+@layer tokens {
+:root {
+  --color-1: #0d0c11;
+  --color-2: #ffffff;
+  --color-3: #6c3cff;
+  --color-4: #efeef4;
+  --color-5: #aaa7b4;
+  --color-6: #5d5a67;
+  --color-7: #1f1d26;
+  --font-1: "Gabarito", "Gabarito Fallback", "Arial Black", Arial, sans-serif;
+  --font-2: "Onest", "Onest Fallback", Arial, sans-serif;
+  --radius-1: 28px;
+  --radius-2: 999px;
+  --radius-3: 14px;
+  --shadow-1: 0 -18px 50px color-mix(in srgb, var(--color-1) 45%, transparent);
+  --shadow-2: 0 2px 0 var(--color-3);
+  --shadow-3: 0 0 0 2px var(--color-1);
+  --space-1: clamp(16px, 3.4vw, 48px);
+  --space-2: clamp(96px, 15vh, 200px);
+}
+}
+</style>
+<style data-8b-part="base">
+@font-face { font-family: "Gabarito Fallback"; src: local("Arial Black"), local("Arial-Black"), local("Arial Bold"); font-weight: 800 1000; size-adjust: 79.7%; ascent-override: 117.9%; descent-override: 32.6%; line-gap-override: 0%; }
+@font-face { font-family: "Gabarito Fallback"; src: local("Arial Bold"), local("Arial-BoldMT"), local("Helvetica Bold"); font-weight: 550 799; size-adjust: 92.5%; ascent-override: 101.7%; descent-override: 28.1%; line-gap-override: 0%; }
+@font-face { font-family: "Onest Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 106.2%; ascent-override: 91.4%; descent-override: 29.2%; line-gap-override: 0%; }
+@font-face { font-family: "Onest Fallback"; src: local("Arial Bold"), local("Arial-BoldMT"), local("Helvetica Bold"); font-weight: 550 799; size-adjust: 101.9%; ascent-override: 95.2%; descent-override: 30.4%; line-gap-override: 0%; }
+@layer base {
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+html.lenis, html.lenis body { height: auto; }
+.lenis:not(.lenis-autoToggle).lenis-stopped { overflow: clip; }
+.lenis [data-lenis-prevent] { overscroll-behavior: contain; }
+.lenis.lenis-smooth iframe { pointer-events: none; }
+body { margin: 0; background: var(--color-2); color: var(--color-1); overflow-x: clip; }
+img { display: block; max-width: 100%; }
+h1, h2, h3, h4, p, ul, ol, figure, blockquote, dl, dd { margin: 0; }
+ul, ol { padding: 0; list-style: none; }
+a { color: inherit; }
+button, input, select, textarea { font: inherit; color: inherit; }
+:focus-visible { outline: 3px solid var(--color-3); outline-offset: 3px; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+main { overflow-x: clip; }
+.skip { position: fixed; left: var(--space-1); top: 12px; z-index: 100; padding: 10px 16px; border-radius: var(--radius-2); background: var(--color-2); color: var(--color-1); font-family: var(--font-2); font-size: 15px; font-weight: 600; text-decoration: none; transform: translateY(-160%); }
+.skip:focus-visible { transform: none; }
+}
+</style>
+<style data-8b-part="system">
+@layer atoms {
+.m-text { font-family: var(--font-2); font-size: 17px; font-weight: 400; line-height: 1.55; letter-spacing: 0; text-transform: none; font-style: normal; }
+.m-text-2 { font-family: var(--font-1); font-size: min(40vw, calc((100vw - 2 * var(--space-1)) / (var(--len, 5) * 0.47))); font-weight: 800; line-height: 0.8; letter-spacing: -0.065em; text-transform: none; font-style: normal; }
+.m-text-3 { font-family: var(--font-1); font-size: clamp(50px, 9.2vw, 150px); font-weight: 800; line-height: 0.88; letter-spacing: -0.055em; text-transform: none; font-style: normal; }
+.m-text-4 { font-family: var(--font-1); font-size: clamp(30px, 3.9vw, 58px); font-weight: 700; line-height: 0.96; letter-spacing: -0.04em; text-transform: none; font-style: normal; }
+.m-text-5 { font-family: var(--font-2); font-size: clamp(19px, 1.7vw, 25px); font-weight: 500; line-height: 1.28; letter-spacing: -0.015em; text-transform: none; font-style: normal; }
+.m-text-6 { font-family: var(--font-2); font-size: 13px; font-weight: 600; line-height: 1.3; letter-spacing: 0.01em; text-transform: none; font-style: normal; }
+.m-text-7 { font-family: var(--font-1); font-size: clamp(22px, 2.05vw, 30px); font-weight: 700; line-height: 1.08; letter-spacing: -0.025em; text-transform: none; font-style: normal; }
+.m-dot { display: inline-block; width: 0.19em; height: 0.19em; margin-left: 0.035em; border-radius: var(--radius-2); background: var(--color-3); vertical-align: baseline; }
+.m-btn { position: relative; isolation: isolate; display: inline-flex; align-items: center; gap: 10px; min-height: 48px; padding: 0 22px 0 18px; overflow: hidden; border: 0; border-radius: var(--radius-2); background: var(--color-3); color: var(--color-2); font-family: var(--font-2); font-size: 16px; font-weight: 600; line-height: 1; letter-spacing: -0.01em; text-decoration: none; cursor: pointer; }
+.m-btn::before { content: ""; width: 8px; height: 8px; flex: none; border-radius: var(--radius-2); background: currentColor; }
+.m-btn::after { content: ""; position: absolute; z-index: -1; left: 22px; top: 50%; width: 8px; height: 8px; margin: -4px 0 0 -4px; border-radius: var(--radius-2); background: var(--color-1); transform: scale(0); transition: transform .5s cubic-bezier(.7, 0, .2, 1); }
+.m-btn__label { position: relative; }
+@media (hover: hover) { .m-btn:hover::after { transform: scale(60); } }
+.m-btn-2 { position: relative; isolation: isolate; display: inline-flex; align-items: center; gap: 10px; min-height: 48px; padding: 0 22px 0 18px; overflow: hidden; border: 0; border-radius: var(--radius-2); background: var(--color-2); color: var(--color-1); font-family: var(--font-2); font-size: 16px; font-weight: 600; line-height: 1; letter-spacing: -0.01em; text-decoration: none; cursor: pointer; transition: color .35s; }
+.m-btn-2::before { content: ""; width: 8px; height: 8px; flex: none; border-radius: var(--radius-2); background: var(--color-3); }
+.m-btn-2::after { content: ""; position: absolute; z-index: -1; left: 22px; top: 50%; width: 8px; height: 8px; margin: -4px 0 0 -4px; border-radius: var(--radius-2); background: var(--color-1); transform: scale(0); transition: transform .5s cubic-bezier(.7, 0, .2, 1); }
+.m-btn-2 .m-btn__label { position: relative; }
+@media (hover: hover) { .m-btn-2:hover { color: var(--color-2); } .m-btn-2:hover::after { transform: scale(60); } }
+.m-link { display: inline-flex; align-items: center; gap: 0.45em; font-family: var(--font-2); font-size: clamp(17px, 1.45vw, 21px); font-weight: 600; line-height: 1.2; letter-spacing: -0.015em; text-decoration: none; }
+.m-link__label { position: relative; padding-block: 3px; }
+.m-link__label::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 2px; border-radius: var(--radius-2); background: currentColor; transform: scaleX(0); transform-origin: 0 50%; transition: transform .45s cubic-bezier(.7, 0, .2, 1); }
+.m-link__arrow { width: 0.8em; height: 0.8em; flex: none; fill: none; stroke: currentColor; stroke-width: 1.8; transition: transform .45s cubic-bezier(.7, 0, .2, 1); }
+@media (hover: hover) { .m-link:hover .m-link__label::after { transform: scaleX(1); } .m-link:hover .m-link__arrow { transform: translateX(4px); } }
+.m-link-2 { position: relative; display: inline-block; padding-block: 4px; font-family: var(--font-2); font-size: 15px; font-weight: 500; line-height: 1.2; letter-spacing: -0.005em; text-decoration: none; }
+.m-link-2::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 1.5px; border-radius: var(--radius-2); background: currentColor; transform: scaleX(0); transform-origin: 0 50%; transition: transform .45s cubic-bezier(.7, 0, .2, 1); }
+@media (hover: hover) { .m-link-2:hover::after { transform: scaleX(1); } }
+.m-icon { position: relative; isolation: isolate; display: inline-grid; place-items: center; width: 48px; height: 48px; flex: none; padding: 0; border: 1.5px solid currentColor; border-radius: var(--radius-2); background: transparent; color: inherit; cursor: pointer; transition: color .35s; }
+.m-icon::after { content: ""; position: absolute; inset: 3px; z-index: -1; border-radius: var(--radius-2); background: var(--color-3); transform: scale(0); transition: transform .45s cubic-bezier(.7, 0, .2, 1); }
+.m-icon svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.8; }
+@media (hover: hover) { .m-icon:hover { color: var(--color-2); } .m-icon:hover::after { transform: scale(1); } }
+.m-surface { border-radius: var(--radius-1); background: var(--color-4); color: var(--color-1); }
+.m-badge { display: inline-flex; align-items: center; min-height: 30px; padding: 0 12px; border: 1px solid color-mix(in srgb, currentColor 32%, transparent); border-radius: var(--radius-2); font-family: var(--font-2); font-size: 13px; font-weight: 500; line-height: 1; letter-spacing: 0; text-transform: none; font-style: normal; white-space: nowrap; }
+.m-field { display: block; width: 100%; min-height: 48px; padding: 10px 0; border: 0; border-bottom: 1.5px solid color-mix(in srgb, currentColor 40%, transparent); border-radius: 0; background: transparent; color: inherit; font-family: var(--font-2); font-size: 17px; font-weight: 400; line-height: 1.4; letter-spacing: 0; text-transform: none; font-style: normal; }
+.m-field:focus-visible { outline: none; border-bottom-color: var(--color-3); box-shadow: var(--shadow-2); }
+textarea.m-field { min-height: 112px; resize: vertical; }
+}
+</style>
+<style data-8b-part="section:navigation">
+@layer sections {
+#navigation { position: fixed; z-index: 40; inset: 0 0 auto; display: flex; align-items: center; gap: 12px; padding: 14px var(--space-1); pointer-events: none; }
+#navigation > * { pointer-events: auto; }
+#navigation .nav__brand { display: inline-flex; align-items: baseline; min-height: 48px; padding: 9px 18px 0; border-radius: var(--radius-2); background: var(--color-1); color: var(--color-2); font-family: var(--font-1); font-size: 25px; font-weight: 800; line-height: 1.2; letter-spacing: -0.05em; text-decoration: none; }
+#navigation .nav__links { margin-inline: auto; padding: 0 8px; border-radius: var(--radius-2); background: var(--color-1); color: var(--color-2); }
+#navigation .nav__links ul { display: flex; }
+#navigation .nav__cta { box-shadow: var(--shadow-3); }
+#navigation .nav__links a { display: block; margin: 0 14px; padding-block: 14px; }
+#navigation .nav__links a::after { bottom: 10px; }
+#navigation .nav__menu { display: none; margin-left: auto; }
+#navigation .menu { position: fixed; inset: 0; z-index: 60; display: grid; grid-template-rows: auto 1fr auto; padding: 14px var(--space-1) 32px; background: var(--color-1); color: var(--color-2); overflow-y: auto; }
+#navigation .menu[hidden] { display: none; }
+#navigation .menu__top { display: flex; justify-content: flex-end; }
+#navigation .menu__list { align-self: center; display: grid; gap: 6px; }
+#navigation .menu__list a { font-family: var(--font-1); font-size: clamp(42px, 13vw, 72px); font-weight: 800; line-height: 1; letter-spacing: -0.05em; text-decoration: none; }
+#navigation .menu__foot { color: var(--color-5); }
+@media (max-width: 899px) {
+  #navigation .nav__links, #navigation .nav__cta { display: none; }
+  #navigation .nav__menu { display: inline-flex; }
+}
+}
+</style>
+<style data-8b-part="section:hero">
+@layer sections {
+#hero { --ap: min(74vw, 44svh); position: relative; z-index: 3; display: grid; grid-template-rows: 1fr auto; min-height: max(100svh, 560px); padding: 0 var(--space-1); background: var(--color-1); color: var(--color-2); overflow: clip visible; }
+#hero .hero__intro { display: grid; justify-items: start; align-content: start; gap: 18px; max-width: 32rem; padding-top: clamp(92px, 14svh, 150px); }
+#hero .hero__lead { color: var(--color-2); }
+#hero .hero__title { position: static; align-self: end; padding-bottom: clamp(18px, 5svh, 52px); white-space: nowrap; }
+#hero .hero__word, #hero .hero__mask, #hero .hero__glyphs { display: inline-block; }
+#hero .hero__period { position: static; display: inline-block; width: 0.19em; height: 0.19em; margin-left: 0.035em; border-radius: var(--radius-2); background: var(--color-3); vertical-align: baseline; }
+#hero .hero__stage { position: absolute; left: calc(50% - var(--ap) / 2); top: calc(57% - var(--ap) / 2); width: var(--ap); height: var(--ap); font-size: 16px; line-height: 0; }
+#hero .hero__aperture { position: absolute; inset: 0; display: block; overflow: hidden; border-radius: var(--radius-2); background: var(--color-3); }
+#hero .hero__img { width: 100%; height: 100%; object-fit: cover; }
+#hero .hero__tint { position: absolute; inset: 0; background: var(--color-3); opacity: 0; }
+#hero .hero__orbit { position: absolute; inset: -9%; display: block; border-radius: var(--radius-2); border: 1px solid color-mix(in srgb, var(--color-2) 16%, transparent); }
+#hero .hero__moon { position: absolute; left: 50%; top: 0; width: 9%; height: 9%; margin: -4.5% 0 0 -4.5%; border-radius: var(--radius-2); background: var(--color-3); }
+@media (min-width: 900px) and (orientation: landscape) {
+  #hero { --ap: min(36vw, 60svh); }
+  #hero .hero__title { font-size: min(26.5vw, 43svh); }
+  #hero .hero__period { position: relative; background: transparent; }
+  #hero .hero__stage { left: 0; top: auto; bottom: 0; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  #hero .hero__mask { animation: hero-mask .95s linear backwards; }
+  #hero .hero__glyphs { animation: hero-rise .95s cubic-bezier(.16, .84, .24, 1) backwards; }
+  #hero .hero__stage { transform-origin: 50% 50%; animation: hero-swell 1.1s cubic-bezier(.2, .9, .25, 1.12) backwards; }
+  #hero .hero__intro { animation: hero-lift .9s .12s cubic-bezier(.16, .84, .24, 1) backwards; }
+  #hero .hero__img { animation: hero-turn 46s linear infinite; }
+  #hero .hero__orbit { animation: hero-orbit 13s linear infinite; }
+  #hero.is-offscreen .hero__img, #hero.is-offscreen .hero__orbit { animation-play-state: paused; }
+  @media (min-width: 900px) and (orientation: landscape) { #hero .hero__stage { transform-origin: 0 100%; animation-name: hero-inflate; } }
+  @keyframes hero-mask { from, to { clip-path: inset(-40% -8% 0 -8%); } }
+  @keyframes hero-rise { from { transform: translateY(92%); } }
+  @keyframes hero-swell { from { transform: scale(.72); } }
+  @keyframes hero-inflate { from { transform: scale(.36); } }
+  @keyframes hero-lift { from { transform: translateY(26px); } }
+  @keyframes hero-turn { to { transform: rotate(360deg); } }
+  @keyframes hero-orbit { to { transform: rotate(360deg); } }
+}
+}
+</style>
+<style data-8b-part="section:statement">
+@layer sections {
+#statement { position: relative; padding: var(--space-2) var(--space-1) calc(var(--space-2) * 0.9); background: var(--color-2); }
+#statement .statement__title { font-size: clamp(40px, 8.7vw, 140px); }
+#statement .statement__line { display: block; }
+#statement .statement__body { display: grid; grid-template-columns: minmax(0, 1fr); gap: 48px; margin-top: clamp(56px, 11vh, 120px); }
+#statement .statement__lead { max-width: 36rem; }
+#statement .statement__index ul { display: grid; gap: 12px; }
+@media (min-width: 900px) {
+  #statement .statement__body { grid-template-columns: minmax(0, 7fr) minmax(0, 4fr); align-items: start; }
+  #statement .statement__lead { font-size: clamp(24px, 2.35vw, 34px); line-height: 1.16; letter-spacing: -0.025em; }
+}
+}
+</style>
+<style data-8b-part="section:work">
+@layer sections {
+#work { position: relative; color: var(--color-2); }
+#work .work__plate { position: absolute; inset: 0 0 -2px; background: var(--color-1); }
+#work .work__stage { position: relative; display: grid; grid-template-columns: minmax(0, 1fr); align-content: start; gap: clamp(28px, 4vh, 48px); padding: var(--space-2) var(--space-1); }
+#work .work__head { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 16px 40px; }
+#work .work__lead { max-width: 25rem; color: var(--color-5); }
+#work .work__track { display: grid; grid-template-columns: minmax(0, 1fr); gap: 20px; }
+#work .case { position: relative; display: block; overflow: hidden; border-radius: var(--radius-1); background: var(--color-7); aspect-ratio: 4 / 5; }
+#work .case__media { position: absolute; inset: 0; overflow: hidden; }
+#work .case__img { position: absolute; top: 0; left: -7%; width: 114%; max-width: none; height: 100%; object-fit: cover; }
+#work .case__media::after { content: ""; position: absolute; inset: 40% 0 0; background: linear-gradient(to top, color-mix(in srgb, var(--color-1) 82%, transparent), transparent); }
+#work .case__tag { position: absolute; left: clamp(18px, 2vw, 28px); top: clamp(18px, 2vw, 28px); background: color-mix(in srgb, var(--color-1) 62%, transparent); }
+#work .case__text { position: absolute; left: clamp(18px, 2.4vw, 36px); right: clamp(18px, 2.4vw, 36px); bottom: clamp(18px, 2.4vw, 36px); display: grid; gap: 10px; }
+#work .case__line { max-width: 30rem; color: var(--color-2); }
+@media (min-width: 700px) {
+  #work .work__track { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  #work .case { aspect-ratio: 16 / 11; }
+  #work .case:last-child:nth-child(odd) { grid-column: span 2; aspect-ratio: 16 / 6.5; }
+}
+}
+</style>
+<style data-8b-part="scene-style:work">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #work.is-track { height: calc(100svh + var(--run, 0px)); }
+  #work.is-track .work__stage { position: sticky; top: 0; height: 100svh; min-height: 560px; padding-top: clamp(84px, 13svh, 120px); padding-bottom: clamp(24px, 5svh, 48px); grid-template-rows: auto minmax(0, 1fr); overflow: clip; }
+  #work.is-track .work__window { display: flex; align-items: center; min-height: 0; transform-origin: 0 50%; }
+  #work.is-track .work__track { display: flex; gap: clamp(14px, 1.6vw, 24px); width: max-content; height: min(100%, 64svh); }
+  #work.is-track .case { width: auto; height: 100%; aspect-ratio: 4 / 5; flex: none; }
+  @media (min-width: 700px) { #work.is-track .case { aspect-ratio: 16 / 10.5; } }
+}
+}
+</style>
+<style data-8b-part="section:again">
+@layer sections {
+#again { position: relative; background: var(--color-1); color: var(--color-2); }
+#again .again__stage { position: relative; padding: calc(var(--space-2) * 0.7) var(--space-1) var(--space-2); }
+#again .again__head { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 16px 40px; }
+#again .again__lead { max-width: 27rem; color: var(--color-5); }
+#again .again__swing { margin-top: clamp(40px, 7vh, 72px); }
+#again .again__wheel { display: grid; grid-template-columns: minmax(0, 1fr); gap: 16px; }
+#again .partner__card { position: relative; display: block; overflow: hidden; border-radius: var(--radius-1); background: var(--color-7); aspect-ratio: 4 / 5; }
+#again .partner__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+#again .partner__card::after { content: ""; position: absolute; inset: 35% 0 0; background: linear-gradient(to top, color-mix(in srgb, var(--color-1) 86%, transparent), transparent); }
+#again .partner__text { position: absolute; z-index: 1; left: clamp(16px, 1.8vw, 26px); right: clamp(16px, 1.8vw, 26px); bottom: clamp(16px, 1.8vw, 26px); display: grid; justify-items: start; gap: 10px; }
+#again .partner__year { background: color-mix(in srgb, var(--color-1) 62%, transparent); }
+#again .partner__name { font-size: clamp(28px, 2.6vw, 40px); }
+#again .partner__line { color: var(--color-2); }
+@media (min-width: 640px) { #again .again__wheel { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 1000px) { #again .again__wheel { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+}
+</style>
+<style data-8b-part="scene-style:again">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #again.is-wheel { height: calc(100svh + var(--spin, 0px)); }
+  #again.is-wheel .again__stage { position: sticky; top: 0; height: 100svh; min-height: 560px; overflow: clip; padding-top: clamp(84px, 13svh, 120px); }
+  #again.is-wheel .again__swing { position: absolute; left: 50%; top: calc(var(--arc-top) + var(--radius)); width: 0; height: 0; margin: 0; }
+  #again.is-wheel .again__wheel { position: absolute; left: 0; top: 0; display: block; width: 0; height: 0; }
+  #again.is-wheel .partner { position: absolute; left: 0; top: 0; width: 0; height: 0; rotate: calc(var(--i) * var(--step)); }
+  #again.is-wheel .partner__card { position: absolute; left: calc(var(--card) / -2); top: calc(var(--radius) * -1); width: var(--card); }
+}
+}
+</style>
+<style data-8b-part="section:capabilities">
+@layer sections {
+#capabilities { position: relative; padding: calc(var(--space-2) * 0.6) var(--space-1) var(--space-2); background: var(--color-1); color: var(--color-2); }
+#capabilities .capabilities__head { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 20px 40px; margin-bottom: clamp(40px, 7vh, 80px); }
+#capabilities .capabilities__lead { max-width: 27rem; color: var(--color-5); }
+#capabilities .capabilities__deck { display: grid; gap: 20px; }
+#capabilities .service { position: relative; display: grid; grid-template-columns: minmax(0, 1fr); gap: 24px; padding: clamp(18px, 2.4vw, 34px); overflow: hidden; box-shadow: var(--shadow-1); }
+#capabilities .service__text { display: flex; flex-direction: column; gap: 16px; }
+#capabilities .service__line { max-width: 30rem; color: var(--color-6); }
+#capabilities .service__tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; padding-top: 8px; color: var(--color-6); }
+#capabilities .service__media { overflow: hidden; border-radius: var(--radius-3); aspect-ratio: 16 / 10; }
+#capabilities .service__media img { width: 100%; height: 100%; object-fit: cover; }
+#capabilities .service__shade { position: absolute; inset: 0; background: var(--color-1); opacity: 0; pointer-events: none; }
+@media (min-width: 900px) {
+  #capabilities .service { grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: clamp(24px, 3vw, 48px); height: min(62svh, 560px); min-height: 400px; }
+  #capabilities .service__media { aspect-ratio: auto; height: 100%; }
+}
+}
+</style>
+<style data-8b-part="scene-style:capabilities">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #capabilities.is-deck .service { position: sticky; top: calc(clamp(80px, 12svh, 108px) + var(--i) * 14px); transform-origin: 50% 0; }
+}
+}
+</style>
+<style data-8b-part="section:method">
+@layer sections {
+#method { position: relative; padding: var(--space-2) var(--space-1); background: var(--color-2); }
+#method .method__head { display: grid; gap: 24px; max-width: 60rem; margin-bottom: clamp(48px, 9vh, 110px); }
+#method .method__lead { max-width: 34rem; }
+#method .method__body { display: grid; grid-template-columns: minmax(0, 1fr) 92px; gap: 20px; align-items: start; }
+#method .method__ring { position: relative; grid-column: 2; grid-row: 1; width: 100%; aspect-ratio: 1; }
+#method .method__svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; rotate: -90deg; }
+#method .method__track { fill: none; stroke: color-mix(in srgb, var(--color-1) 14%, transparent); stroke-width: 1.5; }
+#method .method__arc { fill: none; stroke: var(--color-3); stroke-width: 5; stroke-linecap: round; }
+#method .method__station { position: absolute; left: calc(50% + 42.5% * var(--x)); top: calc(50% + 42.5% * var(--y)); width: 9%; height: 9%; margin: -4.5% 0 0 -4.5%; border-radius: var(--radius-2); background: var(--color-3); }
+#method .method__arm { position: absolute; inset: 7.5%; }
+#method .method__runner { position: absolute; left: 50%; top: 0; width: 15%; height: 15%; margin: -7.5% 0 0 -7.5%; border: 3px solid var(--color-3); border-radius: var(--radius-2); background: var(--color-2); }
+#method .method__steps { grid-column: 1; grid-row: 1; display: grid; gap: clamp(56px, 18vh, 170px); }
+#method .step { display: grid; gap: 14px; max-width: 34rem; }
+#method .step__text { color: var(--color-6); }
+@media (min-width: 900px) {
+  #method .method__body { grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: 7vw; }
+  #method .method__ring { grid-column: 1; width: min(100%, 50svh); justify-self: center; }
+  #method .method__steps { grid-column: 2; padding-block: 8svh 14svh; }
+}
+}
+</style>
+<style data-8b-part="scene-style:method">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #method.is-cycle .method__ring { position: sticky; top: 104px; }
+  @media (min-width: 900px) { #method.is-cycle .method__ring { top: calc(50svh - min(25svh, 21vw)); } }
+}
+}
+</style>
+<style data-8b-part="section:studio">
+@layer sections {
+#studio { position: relative; padding: var(--space-2) var(--space-1); background: var(--color-2); }
+#studio .studio__head { display: grid; gap: 28px; margin-bottom: clamp(48px, 8vh, 96px); }
+#studio .studio__lead { max-width: 42rem; }
+#studio .studio__collage { position: relative; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+#studio .shot { position: relative; overflow: hidden; border-radius: var(--radius-3); background: var(--color-4); }
+#studio .shot img { width: 100%; height: 100%; object-fit: cover; }
+#studio .shot--wide { grid-column: span 2; aspect-ratio: 3 / 2; }
+#studio .shot--tall { aspect-ratio: 3 / 4; }
+#studio .studio__roles { grid-column: span 2; display: grid; align-content: start; gap: 18px; padding-top: 24px; }
+#studio .studio__roles ul { display: grid; }
+#studio .role { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 4px 16px; padding: 14px 0; border-top: 1px solid color-mix(in srgb, var(--color-1) 16%, transparent); }
+#studio .role__place { color: var(--color-6); }
+@media (min-width: 900px) {
+  #studio .studio__head { grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); align-items: end; column-gap: 6vw; }
+  #studio .studio__collage { display: block; aspect-ratio: 1.85; }
+  #studio .shot { position: absolute; }
+  #studio .shot:nth-child(1) { left: 0; top: 0; width: 34%; }
+  #studio .shot:nth-child(2) { left: 37%; top: 5.5%; width: 19%; }
+  #studio .shot:nth-child(3) { left: 8%; top: 47%; width: 20%; }
+  #studio .shot:nth-child(4) { left: 59%; top: 0; width: 41%; }
+  #studio .shot:nth-child(5) { left: 31%; top: 53.3%; width: 36%; }
+  #studio .studio__roles { position: absolute; left: 71%; top: 55%; width: 29%; padding-top: 0; }
+}
+}
+</style>
+<style data-8b-part="section:journal">
+@layer sections {
+#journal { position: relative; padding: calc(var(--space-2) * 0.6) var(--space-1) var(--space-2); background: var(--color-2); }
+#journal .journal__head { margin-bottom: clamp(40px, 7vh, 88px); }
+#journal .journal__body { display: grid; grid-template-columns: minmax(0, 1fr); gap: 28px; align-items: start; }
+#journal .journal__frame { position: relative; overflow: hidden; border-radius: var(--radius-1); background: var(--color-4); aspect-ratio: 16 / 10; }
+#journal .journal__shot { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+#journal .journal__shot:first-child { z-index: 1; }
+#journal .journal__list { display: grid; gap: clamp(36px, 8vh, 72px); }
+#journal .story { display: grid; gap: 12px; max-width: 36rem; padding-top: 20px; border-top: 1px solid color-mix(in srgb, var(--color-1) 16%, transparent); }
+#journal .story__meta { color: var(--color-6); }
+#journal .story__meta span { color: var(--color-3); }
+#journal .story__text { color: var(--color-6); }
+@media (min-width: 900px) {
+  #journal .journal__body { grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: 7vw; }
+  #journal .journal__frame { aspect-ratio: 4 / 5; }
+  #journal .journal__list { gap: clamp(64px, 18vh, 170px); padding-block: 6svh 10svh; }
+}
+}
+</style>
+<style data-8b-part="scene-style:journal">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #journal.is-swap .journal__frame { position: sticky; z-index: 1; top: 80px; }
+  #journal.is-swap .journal__shot:first-child { z-index: auto; }
+  @media (min-width: 900px) { #journal.is-swap .journal__frame { top: calc(50svh - min(30svh, 22vw)); max-height: 60svh; } }
+}
+}
+</style>
+<style data-8b-part="section:faq">
+@layer sections {
+#faq { position: relative; display: grid; gap: 40px; padding: var(--space-2) var(--space-1); background: var(--color-2); border-top: 1px solid color-mix(in srgb, var(--color-1) 12%, transparent); }
+#faq .faq__title { font-size: clamp(48px, 7.2vw, 116px); }
+#faq .faq__item { border-bottom: 1px solid color-mix(in srgb, var(--color-1) 16%, transparent); }
+#faq .faq__item:first-child { border-top: 1px solid color-mix(in srgb, var(--color-1) 16%, transparent); }
+#faq summary { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 22px 0; cursor: pointer; list-style: none; }
+#faq summary::-webkit-details-marker { display: none; }
+#faq .faq__mark { position: relative; flex: none; width: 34px; height: 34px; border: 1.5px solid var(--color-1); border-radius: var(--radius-2); }
+#faq .faq__mark::after { content: ""; position: absolute; inset: 0; margin: auto; width: 10px; height: 10px; border-radius: var(--radius-2); background: var(--color-3); transition: transform .45s cubic-bezier(.7, 0, .2, 1); }
+#faq details[open] .faq__mark::after { transform: scale(3.1); }
+#faq .faq__answer { max-width: 40rem; padding: 0 0 26px; color: var(--color-6); }
+@media (hover: hover) { #faq summary:hover .faq__mark::after { transform: scale(1.8); } #faq details[open] summary:hover .faq__mark::after { transform: scale(3.1); } }
+@media (min-width: 900px) { #faq { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 6vw; } }
+}
+</style>
+<style data-8b-part="section:contact">
+@layer sections {
+#contact { position: relative; padding: var(--space-2) var(--space-1); background: var(--color-3); color: var(--color-2); }
+#contact :focus-visible { outline-color: var(--color-2); }
+#contact .contact__title { font-size: min(19vw, calc((100vw - 2 * var(--space-1)) / (var(--len) * 0.5))); line-height: 0.86; white-space: nowrap; }
+#contact .contact__title .m-dot { background: var(--color-2); }
+#contact .contact__grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 48px; margin-top: clamp(40px, 8vh, 88px); }
+#contact .contact__info { display: grid; align-content: start; gap: 32px; }
+#contact .contact__lead { max-width: 30rem; }
+#contact .contact__mail { font-family: var(--font-1); font-size: clamp(28px, 3.4vw, 50px); font-weight: 700; line-height: 1; letter-spacing: -0.035em; text-decoration: none; }
+#contact .contact__mail span { background: linear-gradient(currentColor, currentColor) 0 100% / 100% 2px no-repeat; padding-bottom: 4px; }
+#contact .contact__places { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 24px; }
+#contact .contact__places dt { margin-bottom: 6px; }
+#contact .contact__places dd a { text-decoration: none; }
+#contact .contact__form { display: grid; gap: 18px; padding: clamp(22px, 3vw, 40px); }
+#contact .contact__form label { display: grid; gap: 2px; color: var(--color-6); }
+#contact .contact__form .m-field { color: var(--color-1); }
+#contact .contact__form :focus-visible { outline-color: var(--color-3); }
+#contact .contact__pair { display: grid; gap: 18px; }
+#contact .contact__actions { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; padding-top: 6px; }
+#contact .contact__status { color: var(--color-1); }
+@media (min-width: 640px) { #contact .contact__pair { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 1000px) { #contact .contact__grid { grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: 6vw; } }
+}
+</style>
+<style data-8b-part="section:footer">
+@layer sections {
+#footer { --ap: min(30vw, 44svh); position: relative; padding: clamp(80px, 12vh, 140px) var(--space-1) 28px; background: var(--color-1); color: var(--color-2); overflow: clip; }
+#footer .footer__bye { position: relative; padding-top: var(--ap); white-space: nowrap; font-size: min(36vw, 40svh); }
+#footer .footer__word { display: inline-block; }
+#footer .footer__period { position: relative; display: inline-block; width: 0.19em; height: 0.19em; margin-left: 0.035em; vertical-align: baseline; }
+#footer .footer__aperture { position: absolute; left: 0; bottom: 0; width: var(--ap); height: var(--ap); overflow: hidden; border-radius: var(--radius-2); background: var(--color-3); transform-origin: 0 100%; }
+#footer .footer__img { width: 100%; height: 100%; object-fit: cover; }
+#footer .footer__tint { position: absolute; inset: 0; background: var(--color-3); opacity: 0; }
+#footer .footer__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 40px 24px; margin-top: clamp(48px, 9vh, 96px); padding-top: 32px; border-top: 1px solid color-mix(in srgb, var(--color-2) 16%, transparent); }
+#footer .footer__col { display: grid; align-content: start; gap: 6px; }
+#footer .footer__label { margin-bottom: 8px; color: var(--color-5); }
+#footer .footer__news { grid-column: 1 / -1; display: grid; gap: 14px; }
+#footer .footer__field { display: flex; align-items: center; gap: 12px; }
+#footer .footer__field .m-field { flex: 1; }
+#footer .footer__note { color: var(--color-5); }
+#footer .footer__legal { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; margin-top: 56px; color: var(--color-5); }
+@media (min-width: 900px) {
+  #footer .footer__bye { font-size: min(24vw, 40svh); }
+  #footer .footer__grid { grid-template-columns: repeat(3, minmax(0, 1fr)) minmax(0, 2fr); }
+  #footer .footer__news { grid-column: auto; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  #footer .footer__img { animation: footer-turn 46s linear infinite; }
+  #footer.is-offscreen .footer__img { animation-play-state: paused; }
+  @keyframes footer-turn { to { transform: rotate(360deg); } }
+}
+}
+</style>
+</head>
+<body class="m-text">
+<a class="skip" href="#main">Skip to content</a>
+<!-- navigation: fixed top bar: wordmark, section links, Start a project button; phone menu overlay -->
+<header id="navigation" class="nav" data-8b-section="navigation">
+  <a class="nav__brand" href="#hero" aria-label="Onda, back to the top">Onda<span class="m-dot" aria-hidden="true"></span></a>
+  <nav class="nav__links" aria-label="Main">
+    <ul>
+      <li><a class="m-link-2" href="#work">Work</a></li>
+      <li><a class="m-link-2" href="#capabilities">Services</a></li>
+      <li><a class="m-link-2" href="#method">Approach</a></li>
+      <li><a class="m-link-2" href="#studio">Studio</a></li>
+      <li><a class="m-link-2" href="#journal">Journal</a></li>
+    </ul>
+  </nav>
+  <a class="m-btn nav__cta" href="#contact"><span class="m-btn__label">Start a project</span></a>
+  <button class="m-btn-2 nav__menu" type="button" aria-expanded="false" aria-controls="menu"><span class="m-btn__label">Menu</span></button>
+  <div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Menu" data-lenis-prevent hidden>
+    <div class="menu__top"><button class="m-icon menu__close" type="button" aria-label="Close the menu"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 3l10 10M13 3 3 13"/></svg></button></div>
+    <ul class="menu__list">
+      <li><a href="#work">Work<span class="m-dot" aria-hidden="true"></span></a></li>
+      <li><a href="#capabilities">Services<span class="m-dot" aria-hidden="true"></span></a></li>
+      <li><a href="#method">Approach<span class="m-dot" aria-hidden="true"></span></a></li>
+      <li><a href="#studio">Studio<span class="m-dot" aria-hidden="true"></span></a></li>
+      <li><a href="#journal">Journal<span class="m-dot" aria-hidden="true"></span></a></li>
+      <li><a href="#contact">Contact<span class="m-dot" aria-hidden="true"></span></a></li>
+    </ul>
+    <p class="m-text menu__foot">hello@onda.example · Lisbon and Brooklyn</p>
+  </div>
+</header>
+<main id="main">
+<!-- hero: first screen: a one-word greeting whose full stop is a giant round photo (demo: "Hello") (animation: scene:hero) -->
+<section id="hero" data-8b-section="hero" aria-labelledby="hero-title">
+  <div class="hero__intro">
+    <p class="m-text-5 hero__lead">We're Onda, an independent brand, product and AI studio. We make things people come back to, and we'd love to hear what you're making.</p>
+    <a class="m-link hero__link" href="#work"><span class="m-link__label">See the work</span><svg class="m-link__arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5"/></svg></a>
+  </div>
+  <h1 class="m-text-2 hero__title" id="hero-title" style="--len:5"><span class="hero__word"><span class="hero__mask"><span class="hero__glyphs">Hello</span></span></span><span class="hero__period" aria-hidden="true"><span class="hero__stage"><span class="hero__orbit"><span class="hero__moon"></span></span><span class="hero__aperture"><img srcset="https://images.unsplash.com/photo-1754738381783-f9a2847bfef2?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8cHVycGxlJTIwYWJzdHJhY3QlMjAzZCUyMHNoYXBlfGVufDF8Mnx8fDE3OTEyMDk2Mjd8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=280&amp;h=280&amp;q=68 280w, https://images.unsplash.com/photo-1754738381783-f9a2847bfef2?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8cHVycGxlJTIwYWJzdHJhY3QlMjAzZCUyMHNoYXBlfGVufDF8Mnx8fDE3OTEyMDk2Mjd8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=400&amp;q=68 400w, https://images.unsplash.com/photo-1754738381783-f9a2847bfef2?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8cHVycGxlJTIwYWJzdHJhY3QlMjAzZCUyMHNoYXBlfGVufDF8Mnx8fDE3OTEyMDk2Mjd8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=470&amp;h=470&amp;q=68 470w, https://images.unsplash.com/photo-1754738381783-f9a2847bfef2?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8cHVycGxlJTIwYWJzdHJhY3QlMjAzZCUyMHNoYXBlfGVufDF8Mnx8fDE3OTEyMDk2Mjd8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=560&amp;h=560&amp;q=68 560w, https://images.unsplash.com/photo-1754738381783-f9a2847bfef2?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8cHVycGxlJTIwYWJzdHJhY3QlMjAzZCUyMHNoYXBlfGVufDF8Mnx8fDE3OTEyMDk2Mjd8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=640&amp;h=640&amp;q=68 640w, https://images.unsplash.com/photo-1754738381783-f9a2847bfef2?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8cHVycGxlJTIwYWJzdHJhY3QlMjAzZCUyMHNoYXBlfGVufDF8Mnx8fDE3OTEyMDk2Mjd8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=960&amp;h=960&amp;q=68 960w" sizes="(max-width: 767px) 74vw, 36vw" style="background:#590ca6 url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wCEAAYHBwkLCQwNDQwQERAREBgWFBQWGCMZGxkbGSM1ISchISchNS85LysvOS9UQjs7QlRhUk5SYXZpaXaUjZTBwf8BBgcHCQsJDA0NDBAREBEQGBYUFBYYIxkbGRsZIzUhJyEhJyE1LzkvKy85L1RCOztCVGFSTlJhdmlpdpSNlMHB///AABEIACAAIAMBIgACEQEDEQH/xABwAAAABwEAAAAAAAAAAAAAAAAAAQIDBAUGBxAAAgIBAwQCAwAAAAAAAAAAAQIDEQAEElEFIUFxEzEiI7EBAQADAQAAAAAAAAAAAAAAAAIAAQUHEQACAgICAwEAAAAAAAAAAAABEQACAxIhUQQiQXH/2gAMAwEAAhEDEQA/AOTxhiaJ81kvqawDU1p1dEFD7Pfk4pI/0Fx3a/rEz1PESIyD4F8Z06vj10txyuJvjENT38gSGkP5tfu8VAsRC/NZTftJH9xxNSzadUjINi2Zj99+PFYHjVlKrd3XvFiwkbIIKXXGQ11KyR9SrpcTiNh3Hg3mn6cySaOWMxmkG68j65RDHGm8SJd0vGE/UwsDLW2wLpdooeAOMeK+r3sSW/yPHdH2MzesUxNwdxywVmMAYej7yLPKJHYkg2cegkVSVYgiQHtjpko7BoEIGSt6shphT//Z) 50% 50% / cover no-repeat" class="hero__img" src="https://images.unsplash.com/photo-1754738381783-f9a2847bfef2?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8cHVycGxlJTIwYWJzdHJhY3QlMjAzZCUyMHNoYXBlfGVufDF8Mnx8fDE3OTEyMDk2Mjd8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1200&amp;h=1200&amp;q=68" width="1200" height="1200" alt="" fetchpriority="high"><span class="hero__tint"></span></span></span></span></h1>
+</section>
+
+<!-- statement: two-line statement of what the studio does, a lead paragraph and an index of links into the page (animation: scene:statement) -->
+<section id="statement" data-8b-section="statement" aria-labelledby="statement-title">
+  <h2 class="m-text-3 statement__title" id="statement-title"><span class="statement__line">We make the things</span><span class="statement__line">people come back&nbsp;to<span class="m-dot statement__dot" aria-hidden="true"></span></span></h2>
+  <div class="statement__body">
+    <p class="m-text-5 statement__lead" data-8b-motion="ink">Launching is easy. Being chosen again on an ordinary Tuesday is the hard part, whether you run a bank, a bakery or a museum. It takes strategy, craft, engineering and a lot of listening, and it is the only kind of work we do.</p>
+    <nav class="statement__index" aria-label="On this page">
+      <ul>
+        <li><a class="m-link" href="#work"><span class="m-link__label">See the work</span><svg class="m-link__arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5"/></svg></a></li>
+        <li><a class="m-link" href="#capabilities"><span class="m-link__label">What we do</span><svg class="m-link__arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5"/></svg></a></li>
+        <li><a class="m-link" href="#method"><span class="m-link__label">How we work</span><svg class="m-link__arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5"/></svg></a></li>
+        <li><a class="m-link" href="#studio"><span class="m-link__label">Inside the studio</span><svg class="m-link__arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5"/></svg></a></li>
+        <li><a class="m-link" href="#journal"><span class="m-link__label">Ideas and news</span><svg class="m-link__arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5"/></svg></a></li>
+        <li><a class="m-link" href="#contact"><span class="m-link__label">Start a project</span><svg class="m-link__arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5"/></svg></a></li>
+      </ul>
+    </nav>
+  </div>
+</section>
+
+<!-- work: case studies: five large cards on a horizontal track (demo: five client launches) (animation: scene:work) -->
+<section id="work" data-8b-section="work" aria-labelledby="work-title">
+  <div class="work__plate" aria-hidden="true"></div>
+  <div class="work__stage">
+    <div class="work__head">
+      <h2 class="m-text-3" id="work-title">Selected work<span class="m-dot" aria-hidden="true"></span></h2>
+      <p class="m-text-5 work__lead">Five launches from the last two years. Every one of them is still growing.</p>
+    </div>
+    <div class="work__window">
+      <ul class="work__track">
+        <li class="case">
+          <div class="case__media"><img srcset="https://images.unsplash.com/photo-1620802090791-fd9420668913?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8ZWxlY3RyaWMlMjBiaWtlJTIwY2l0eSUyMHJpZGVyfGVufDF8MHx8fDE3OTEyMDk3MDZ8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=250&amp;q=80 400w, https://images.unsplash.com/photo-1620802090791-fd9420668913?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8ZWxlY3RyaWMlMjBiaWtlJTIwY2l0eSUyMHJpZGVyfGVufDF8MHx8fDE3OTEyMDk3MDZ8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=690&amp;h=431&amp;q=80 690w, https://images.unsplash.com/photo-1620802090791-fd9420668913?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8ZWxlY3RyaWMlMjBiaWtlJTIwY2l0eSUyMHJpZGVyfGVufDF8MHx8fDE3OTEyMDk3MDZ8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=960&amp;h=600&amp;q=80 960w, https://images.unsplash.com/photo-1620802090791-fd9420668913?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8ZWxlY3RyaWMlMjBiaWtlJTIwY2l0eSUyMHJpZGVyfGVufDF8MHx8fDE3OTEyMDk3MDZ8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1340&amp;h=838&amp;q=80 1340w, https://images.unsplash.com/photo-1620802090791-fd9420668913?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8ZWxlY3RyaWMlMjBiaWtlJTIwY2l0eSUyMHJpZGVyfGVufDF8MHx8fDE3OTEyMDk3MDZ8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1600&amp;h=1000&amp;q=80 1600w" sizes="(max-width: 767px) 183vw, 52vw" style="background:#c0c0c0" class="case__img" src="https://images.unsplash.com/photo-1620802090791-fd9420668913?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8ZWxlY3RyaWMlMjBiaWtlJTIwY2l0eSUyMHJpZGVyfGVufDF8MHx8fDE3OTEyMDk3MDZ8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1600&amp;h=1000&amp;q=80" width="1600" height="1000" alt="A rider on an electric bike on a seaside promenade under a wide blue sky" loading="lazy"></div>
+          <span class="m-badge case__tag">Brand, launch</span>
+          <div class="case__text"><h3 class="m-text-4 case__name">Northwind Bikes</h3><p class="m-text-5 case__line">An e-bike brand launched in eleven cities in a single spring.</p></div>
+        </li>
+        <li class="case">
+          <div class="case__media"><img srcset="https://images.unsplash.com/photo-1713371690087-baafaf440240?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8d29tYW4lMjBzbWlsaW5nJTIwaG9sZGluZyUyMHBob25lJTIwY29sb3JmdWx8ZW58MXwwfHx8MTc5MTIwOTcwN3ww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=250&amp;q=80 400w, https://images.unsplash.com/photo-1713371690087-baafaf440240?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8d29tYW4lMjBzbWlsaW5nJTIwaG9sZGluZyUyMHBob25lJTIwY29sb3JmdWx8ZW58MXwwfHx8MTc5MTIwOTcwN3ww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=690&amp;h=431&amp;q=80 690w, https://images.unsplash.com/photo-1713371690087-baafaf440240?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8d29tYW4lMjBzbWlsaW5nJTIwaG9sZGluZyUyMHBob25lJTIwY29sb3JmdWx8ZW58MXwwfHx8MTc5MTIwOTcwN3ww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=960&amp;h=600&amp;q=80 960w, https://images.unsplash.com/photo-1713371690087-baafaf440240?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8d29tYW4lMjBzbWlsaW5nJTIwaG9sZGluZyUyMHBob25lJTIwY29sb3JmdWx8ZW58MXwwfHx8MTc5MTIwOTcwN3ww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1340&amp;h=838&amp;q=80 1340w, https://images.unsplash.com/photo-1713371690087-baafaf440240?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8d29tYW4lMjBzbWlsaW5nJTIwaG9sZGluZyUyMHBob25lJTIwY29sb3JmdWx8ZW58MXwwfHx8MTc5MTIwOTcwN3ww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1600&amp;h=1000&amp;q=80 1600w" sizes="(max-width: 767px) 183vw, 52vw" style="background:#a68cd9" class="case__img" src="https://images.unsplash.com/photo-1713371690087-baafaf440240?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8d29tYW4lMjBzbWlsaW5nJTIwaG9sZGluZyUyMHBob25lJTIwY29sb3JmdWx8ZW58MXwwfHx8MTc5MTIwOTcwN3ww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1600&amp;h=1000&amp;q=80" width="1600" height="1000" alt="A smiling woman in an orange sweater against a lilac wall" loading="lazy"></div>
+          <span class="m-badge case__tag">Product, app</span>
+          <div class="case__text"><h3 class="m-text-4 case__name">Halden Bank</h3><p class="m-text-5 case__line">A 120-year-old bank, rebuilt as the app its customers open first.</p></div>
+        </li>
+        <li class="case">
+          <div class="case__media"><img srcset="https://images.unsplash.com/photo-1587241321921-91a834d6d191?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8YXJ0aXNhbiUyMGJha2VyeSUyMGJyZWFkJTIwY291bnRlcnxlbnwxfDB8fHwxNzkxMjA5NzA3fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=250&amp;q=80 400w, https://images.unsplash.com/photo-1587241321921-91a834d6d191?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8YXJ0aXNhbiUyMGJha2VyeSUyMGJyZWFkJTIwY291bnRlcnxlbnwxfDB8fHwxNzkxMjA5NzA3fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=690&amp;h=431&amp;q=80 690w, https://images.unsplash.com/photo-1587241321921-91a834d6d191?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8YXJ0aXNhbiUyMGJha2VyeSUyMGJyZWFkJTIwY291bnRlcnxlbnwxfDB8fHwxNzkxMjA5NzA3fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=960&amp;h=600&amp;q=80 960w, https://images.unsplash.com/photo-1587241321921-91a834d6d191?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8YXJ0aXNhbiUyMGJha2VyeSUyMGJyZWFkJTIwY291bnRlcnxlbnwxfDB8fHwxNzkxMjA5NzA3fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1340&amp;h=838&amp;q=80 1340w, https://images.unsplash.com/photo-1587241321921-91a834d6d191?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8YXJ0aXNhbiUyMGJha2VyeSUyMGJyZWFkJTIwY291bnRlcnxlbnwxfDB8fHwxNzkxMjA5NzA3fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1600&amp;h=1000&amp;q=80 1600w" sizes="(max-width: 767px) 183vw, 52vw" style="background:#262626" class="case__img" src="https://images.unsplash.com/photo-1587241321921-91a834d6d191?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8YXJ0aXNhbiUyMGJha2VyeSUyMGJyZWFkJTIwY291bnRlcnxlbnwxfDB8fHwxNzkxMjA5NzA3fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1600&amp;h=1000&amp;q=80" width="1600" height="1000" alt="A baker in front of warmly lit wooden shelves of bread" loading="lazy"></div>
+          <span class="m-badge case__tag">Commerce</span>
+          <div class="case__text"><h3 class="m-text-4 case__name">Copper &amp; Oat</h3><p class="m-text-5 case__line">A neighbourhood bakery that now sells more by phone than by window.</p></div>
+        </li>
+        <li class="case">
+          <div class="case__media"><img srcset="https://images.unsplash.com/photo-1544213456-bc37cb97df74?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8bXVzZXVtJTIwZ2FsbGVyeSUyMHZpc2l0b3JzfGVufDF8MHx8fDE3OTEyMDk3MDd8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=250&amp;q=80 400w, https://images.unsplash.com/photo-1544213456-bc37cb97df74?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8bXVzZXVtJTIwZ2FsbGVyeSUyMHZpc2l0b3JzfGVufDF8MHx8fDE3OTEyMDk3MDd8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=690&amp;h=431&amp;q=80 690w, https://images.unsplash.com/photo-1544213456-bc37cb97df74?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8bXVzZXVtJTIwZ2FsbGVyeSUyMHZpc2l0b3JzfGVufDF8MHx8fDE3OTEyMDk3MDd8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=960&amp;h=600&amp;q=80 960w, https://images.unsplash.com/photo-1544213456-bc37cb97df74?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8bXVzZXVtJTIwZ2FsbGVyeSUyMHZpc2l0b3JzfGVufDF8MHx8fDE3OTEyMDk3MDd8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1340&amp;h=838&amp;q=80 1340w, https://images.unsplash.com/photo-1544213456-bc37cb97df74?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8bXVzZXVtJTIwZ2FsbGVyeSUyMHZpc2l0b3JzfGVufDF8MHx8fDE3OTEyMDk3MDd8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1600&amp;h=1000&amp;q=80 1600w" sizes="(max-width: 767px) 183vw, 52vw" style="background:#d9d9d9" class="case__img" src="https://images.unsplash.com/photo-1544213456-bc37cb97df74?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8bXVzZXVtJTIwZ2FsbGVyeSUyMHZpc2l0b3JzfGVufDF8MHx8fDE3OTEyMDk3MDd8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1600&amp;h=1000&amp;q=80" width="1600" height="1000" alt="Visitors walking among white statues in a gallery with blue walls" loading="lazy"></div>
+          <span class="m-badge case__tag">Service, content</span>
+          <div class="case__text"><h3 class="m-text-4 case__name">Atlas Museum</h3><p class="m-text-5 case__line">A quiet collection turned into a weekly night out.</p></div>
+        </li>
+        <li class="case">
+          <div class="case__media"><img srcset="https://images.unsplash.com/photo-1614149162883-504ce4d13909?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8aGVhZHBob25lcyUyMGNvbG9yZnVsJTIwYmFja2dyb3VuZHxlbnwxfDB8fHwxNzkxMjA5NzA4fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=250&amp;q=80 400w, https://images.unsplash.com/photo-1614149162883-504ce4d13909?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8aGVhZHBob25lcyUyMGNvbG9yZnVsJTIwYmFja2dyb3VuZHxlbnwxfDB8fHwxNzkxMjA5NzA4fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=690&amp;h=431&amp;q=80 690w, https://images.unsplash.com/photo-1614149162883-504ce4d13909?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8aGVhZHBob25lcyUyMGNvbG9yZnVsJTIwYmFja2dyb3VuZHxlbnwxfDB8fHwxNzkxMjA5NzA4fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=960&amp;h=600&amp;q=80 960w, https://images.unsplash.com/photo-1614149162883-504ce4d13909?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8aGVhZHBob25lcyUyMGNvbG9yZnVsJTIwYmFja2dyb3VuZHxlbnwxfDB8fHwxNzkxMjA5NzA4fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1380&amp;h=863&amp;q=80 1380w, https://images.unsplash.com/photo-1614149162883-504ce4d13909?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8aGVhZHBob25lcyUyMGNvbG9yZnVsJTIwYmFja2dyb3VuZHxlbnwxfDB8fHwxNzkxMjA5NzA4fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1600&amp;h=1000&amp;q=80 1600w" sizes="(max-width: 767px) 183vw, 106vw" style="background:#0c8cd9" class="case__img" src="https://images.unsplash.com/photo-1614149162883-504ce4d13909?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8aGVhZHBob25lcyUyMGNvbG9yZnVsJTIwYmFja2dyb3VuZHxlbnwxfDB8fHwxNzkxMjA5NzA4fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1600&amp;h=1000&amp;q=80" width="1600" height="1000" alt="Black wireless headphones lit in red and blue" loading="lazy"></div>
+          <span class="m-badge case__tag">Campaign</span>
+          <div class="case__text"><h3 class="m-text-4 case__name">Sola Sound</h3><p class="m-text-5 case__line">A headphone launch that sold out its first run in nine days.</p></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- again: long-term clients: six cards on a wheel that turns with scroll (demo: years of partnership) (animation: scene:again) -->
+<section id="again" data-8b-section="again" aria-labelledby="again-title">
+  <div class="again__stage">
+    <div class="again__head">
+      <h2 class="m-text-3" id="again-title">Never a one-off<span class="m-dot" aria-hidden="true"></span></h2>
+      <p class="m-text-5 again__lead">Most of our partners have been with us for more than five years. Every lap around, the work gets sharper.</p>
+    </div>
+    <div class="again__swing">
+      <ul class="again__wheel">
+        <li class="partner">
+          <div class="partner__card"><img srcset="https://images.unsplash.com/photo-1594386245199-289c2fe0bd0a?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8YWlycGxhbmUlMjB3aW5kb3clMjBza3klMjBzdW5zZXR8ZW58MXwxfHx8MTc5MTIwOTcyOHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=350&amp;h=438&amp;q=80 350w, https://images.unsplash.com/photo-1594386245199-289c2fe0bd0a?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8YWlycGxhbmUlMjB3aW5kb3clMjBza3klMjBzdW5zZXR8ZW58MXwxfHx8MTc5MTIwOTcyOHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=500&amp;q=80 400w, https://images.unsplash.com/photo-1594386245199-289c2fe0bd0a?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8YWlycGxhbmUlMjB3aW5kb3clMjBza3klMjBzdW5zZXR8ZW58MXwxfHx8MTc5MTIwOTcyOHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=690&amp;h=863&amp;q=80 690w, https://images.unsplash.com/photo-1594386245199-289c2fe0bd0a?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8YWlycGxhbmUlMjB3aW5kb3clMjBza3klMjBzdW5zZXR8ZW58MXwxfHx8MTc5MTIwOTcyOHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=900&amp;h=1125&amp;q=80 900w" sizes="(max-width: 767px) 91vw, 30vw" style="background:#26260c" class="partner__img" src="https://images.unsplash.com/photo-1594386245199-289c2fe0bd0a?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8YWlycGxhbmUlMjB3aW5kb3clMjBza3klMjBzdW5zZXR8ZW58MXwxfHx8MTc5MTIwOTcyOHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=900&amp;h=1125&amp;q=80" width="900" height="1125" alt="A sunset sky and a wing seen through an airplane window" loading="lazy">
+          <div class="partner__text"><span class="m-badge partner__year">Year 9</span><h3 class="m-text-4 partner__name">Vela Air</h3><p class="m-text partner__line">From the booking flow to the boarding gate.</p></div></div>
+        </li>
+        <li class="partner">
+          <div class="partner__card"><img srcset="https://images.unsplash.com/photo-1532713107108-dfb5d8d2fc42?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8YmFyaXN0YSUyMHBvdXJpbmclMjBjb2ZmZWV8ZW58MXwxfHx8MTc5MTIwOTcyOXww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=350&amp;h=438&amp;q=80 350w, https://images.unsplash.com/photo-1532713107108-dfb5d8d2fc42?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8YmFyaXN0YSUyMHBvdXJpbmclMjBjb2ZmZWV8ZW58MXwxfHx8MTc5MTIwOTcyOXww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=500&amp;q=80 400w, https://images.unsplash.com/photo-1532713107108-dfb5d8d2fc42?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8YmFyaXN0YSUyMHBvdXJpbmclMjBjb2ZmZWV8ZW58MXwxfHx8MTc5MTIwOTcyOXww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=690&amp;h=863&amp;q=80 690w, https://images.unsplash.com/photo-1532713107108-dfb5d8d2fc42?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8YmFyaXN0YSUyMHBvdXJpbmclMjBjb2ZmZWV8ZW58MXwxfHx8MTc5MTIwOTcyOXww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=900&amp;h=1125&amp;q=80 900w" sizes="(max-width: 767px) 91vw, 30vw" style="background:#262626" class="partner__img" src="https://images.unsplash.com/photo-1532713107108-dfb5d8d2fc42?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8YmFyaXN0YSUyMHBvdXJpbmclMjBjb2ZmZWV8ZW58MXwxfHx8MTc5MTIwOTcyOXww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=900&amp;h=1125&amp;q=80" width="900" height="1125" alt="A barista pouring milk into a latte" loading="lazy">
+          <div class="partner__text"><span class="m-badge partner__year">Year 4</span><h3 class="m-text-4 partner__name">Kiln Coffee</h3><p class="m-text partner__line">One roastery grew into a subscription habit.</p></div></div>
+        </li>
+        <li class="partner">
+          <div class="partner__card"><img srcset="https://images.unsplash.com/photo-1658296777645-0f389d06867c?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8aGlrZXIlMjBtb3VudGFpbiUyMHJpZGdlfGVufDF8MXx8fDE3OTEyMDk3Mjl8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=350&amp;h=438&amp;q=80 350w, https://images.unsplash.com/photo-1658296777645-0f389d06867c?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8aGlrZXIlMjBtb3VudGFpbiUyMHJpZGdlfGVufDF8MXx8fDE3OTEyMDk3Mjl8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=500&amp;q=80 400w, https://images.unsplash.com/photo-1658296777645-0f389d06867c?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8aGlrZXIlMjBtb3VudGFpbiUyMHJpZGdlfGVufDF8MXx8fDE3OTEyMDk3Mjl8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=690&amp;h=863&amp;q=80 690w, https://images.unsplash.com/photo-1658296777645-0f389d06867c?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8aGlrZXIlMjBtb3VudGFpbiUyMHJpZGdlfGVufDF8MXx8fDE3OTEyMDk3Mjl8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=900&amp;h=1125&amp;q=80 900w" sizes="(max-width: 767px) 91vw, 30vw" style="background:#d9d9d9" class="partner__img" src="https://images.unsplash.com/photo-1658296777645-0f389d06867c?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8aGlrZXIlMjBtb3VudGFpbiUyMHJpZGdlfGVufDF8MXx8fDE3OTEyMDk3Mjl8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=900&amp;h=1125&amp;q=80" width="900" height="1125" alt="A hiker with a backpack standing on a rock above green mountains" loading="lazy">
+          <div class="partner__text"><span class="m-badge partner__year">Year 6</span><h3 class="m-text-4 partner__name">Larch Outdoor</h3><p class="m-text partner__line">A storefront rebuilt around the off-season.</p></div></div>
+        </li>
+        <li class="partner">
+          <div class="partner__card"><img srcset="https://images.unsplash.com/photo-1558324190-c940eb141401?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8bmVvbiUyMGFyY2FkZSUyMGdhbWluZ3xlbnwxfDF8fHwxNzkxMjA5NzMwfDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=350&amp;h=438&amp;q=80 350w, https://images.unsplash.com/photo-1558324190-c940eb141401?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8bmVvbiUyMGFyY2FkZSUyMGdhbWluZ3xlbnwxfDF8fHwxNzkxMjA5NzMwfDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=500&amp;q=80 400w, https://images.unsplash.com/photo-1558324190-c940eb141401?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8bmVvbiUyMGFyY2FkZSUyMGdhbWluZ3xlbnwxfDF8fHwxNzkxMjA5NzMwfDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=690&amp;h=863&amp;q=80 690w, https://images.unsplash.com/photo-1558324190-c940eb141401?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8bmVvbiUyMGFyY2FkZSUyMGdhbWluZ3xlbnwxfDF8fHwxNzkxMjA5NzMwfDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=900&amp;h=1125&amp;q=80 900w" sizes="(max-width: 767px) 91vw, 30vw" style="background:#590c0c" class="partner__img" src="https://images.unsplash.com/photo-1558324190-c940eb141401?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8bmVvbiUyMGFyY2FkZSUyMGdhbWluZ3xlbnwxfDF8fHwxNzkxMjA5NzMwfDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=900&amp;h=1125&amp;q=80" width="900" height="1125" alt="Rows of arcade machines glowing with neon light" loading="lazy">
+          <div class="partner__text"><span class="m-badge partner__year">Year 7</span><h3 class="m-text-4 partner__name">Tessera Games</h3><p class="m-text partner__line">A launch campaign for every season since day one.</p></div></div>
+        </li>
+        <li class="partner">
+          <div class="partner__card"><img srcset="https://images.unsplash.com/photo-1641675301559-468f9f4ca037?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8Y2l0eSUyMGhhbGwlMjBwZW9wbGUlMjBzdHJlZXR8ZW58MXwxfHx8MTc5MTIwOTczMHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=350&amp;h=438&amp;q=80 350w, https://images.unsplash.com/photo-1641675301559-468f9f4ca037?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8Y2l0eSUyMGhhbGwlMjBwZW9wbGUlMjBzdHJlZXR8ZW58MXwxfHx8MTc5MTIwOTczMHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=500&amp;q=80 400w, https://images.unsplash.com/photo-1641675301559-468f9f4ca037?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8Y2l0eSUyMGhhbGwlMjBwZW9wbGUlMjBzdHJlZXR8ZW58MXwxfHx8MTc5MTIwOTczMHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=690&amp;h=863&amp;q=80 690w, https://images.unsplash.com/photo-1641675301559-468f9f4ca037?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8Y2l0eSUyMGhhbGwlMjBwZW9wbGUlMjBzdHJlZXR8ZW58MXwxfHx8MTc5MTIwOTczMHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=900&amp;h=1125&amp;q=80 900w" sizes="(max-width: 767px) 91vw, 30vw" style="background:#4073a6" class="partner__img" src="https://images.unsplash.com/photo-1641675301559-468f9f4ca037?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8Y2l0eSUyMGhhbGwlMjBwZW9wbGUlMjBzdHJlZXR8ZW58MXwxfHx8MTc5MTIwOTczMHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=900&amp;h=1125&amp;q=80" width="900" height="1125" alt="A cyclist riding past a red-brick city hall under a blue sky" loading="lazy">
+          <div class="partner__text"><span class="m-badge partner__year">Year 8</span><h3 class="m-text-4 partner__name">Civic Lab</h3><p class="m-text partner__line">Public services people can finish on a phone.</p></div></div>
+        </li>
+        <li class="partner">
+          <div class="partner__card"><img srcset="https://images.unsplash.com/photo-1761234852163-23f2ededd04e?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8ZG9jdG9yJTIwcGF0aWVudCUyMGNsaW5pY3xlbnwxfDF8fHwxNzkxMjA5NzMxfDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=350&amp;h=438&amp;q=80 350w, https://images.unsplash.com/photo-1761234852163-23f2ededd04e?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8ZG9jdG9yJTIwcGF0aWVudCUyMGNsaW5pY3xlbnwxfDF8fHwxNzkxMjA5NzMxfDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=500&amp;q=80 400w, https://images.unsplash.com/photo-1761234852163-23f2ededd04e?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8ZG9jdG9yJTIwcGF0aWVudCUyMGNsaW5pY3xlbnwxfDF8fHwxNzkxMjA5NzMxfDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=690&amp;h=863&amp;q=80 690w, https://images.unsplash.com/photo-1761234852163-23f2ededd04e?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8ZG9jdG9yJTIwcGF0aWVudCUyMGNsaW5pY3xlbnwxfDF8fHwxNzkxMjA5NzMxfDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=900&amp;h=1125&amp;q=80 900w" sizes="(max-width: 767px) 91vw, 30vw" style="background:#d9c08c" class="partner__img" src="https://images.unsplash.com/photo-1761234852163-23f2ededd04e?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8ZG9jdG9yJTIwcGF0aWVudCUyMGNsaW5pY3xlbnwxfDF8fHwxNzkxMjA5NzMxfDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=900&amp;h=1125&amp;q=80" width="900" height="1125" alt="A nurse comforting a young child on a sofa" loading="lazy">
+          <div class="partner__text"><span class="m-badge partner__year">Year 5</span><h3 class="m-text-4 partner__name">Marrow Health</h3><p class="m-text partner__line">One patient app across three hospital systems.</p></div></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- capabilities: services: five cards that stack as you scroll, each with deliverable badges and a photo (animation: scene:capabilities) -->
+<section id="capabilities" data-8b-section="capabilities" aria-labelledby="capabilities-title">
+  <div class="capabilities__head">
+    <h2 class="m-text-3" id="capabilities-title" data-8b-motion="rise">What we do<span class="m-dot" aria-hidden="true"></span></h2>
+    <p class="m-text-5 capabilities__lead">Five practices and one team in the room, from the first workshop to the last release.</p>
+  </div>
+  <ol class="capabilities__deck">
+    <li class="service m-surface">
+      <div class="service__text">
+        <h3 class="m-text-4">Brand and identity</h3>
+        <p class="m-text-5 service__line">Positioning, naming and identity systems with enough range to stay interesting in year five.</p>
+        <ul class="service__tags"><li class="m-badge">Strategy</li><li class="m-badge">Naming</li><li class="m-badge">Identity systems</li><li class="m-badge">Guidelines</li></ul>
+      </div>
+      <div class="service__media" data-8b-motion="iris"><img srcset="https://images.unsplash.com/photo-1617825295690-28ae56c56135?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8cGFja2FnaW5nJTIwZGVzaWduJTIwbW9ja3VwJTIwYm94ZXN8ZW58MXwwfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=310&amp;h=233&amp;q=80 310w, https://images.unsplash.com/photo-1617825295690-28ae56c56135?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8cGFja2FnaW5nJTIwZGVzaWduJTIwbW9ja3VwJTIwYm94ZXN8ZW58MXwwfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=300&amp;q=80 400w, https://images.unsplash.com/photo-1617825295690-28ae56c56135?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8cGFja2FnaW5nJTIwZGVzaWduJTIwbW9ja3VwJTIwYm94ZXN8ZW58MXwwfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=640&amp;h=480&amp;q=80 640w, https://images.unsplash.com/photo-1617825295690-28ae56c56135?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8cGFja2FnaW5nJTIwZGVzaWduJTIwbW9ja3VwJTIwYm94ZXN8ZW58MXwwfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=960&amp;h=720&amp;q=80 960w, https://images.unsplash.com/photo-1617825295690-28ae56c56135?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8cGFja2FnaW5nJTIwZGVzaWduJTIwbW9ja3VwJTIwYm94ZXN8ZW58MXwwfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1200&amp;h=900&amp;q=80 1200w" sizes="(max-width: 767px) 82vw, 47vw" style="background:#f3f3f3" src="https://images.unsplash.com/photo-1617825295690-28ae56c56135?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8cGFja2FnaW5nJTIwZGVzaWduJTIwbW9ja3VwJTIwYm94ZXN8ZW58MXwwfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1200&amp;h=900&amp;q=80" width="1200" height="900" alt="Pink and green printed boxes stacked together" loading="lazy"></div>
+      <span class="service__shade" aria-hidden="true"></span>
+    </li>
+    <li class="service m-surface">
+      <div class="service__text">
+        <h3 class="m-text-4">Products and apps</h3>
+        <p class="m-text-5 service__line">Apps and platforms designed, engineered and measured by the same people who first sketched them.</p>
+        <ul class="service__tags"><li class="m-badge">Product strategy</li><li class="m-badge">UX and UI</li><li class="m-badge">Engineering</li><li class="m-badge">Design systems</li></ul>
+      </div>
+      <div class="service__media" data-8b-motion="iris"><img srcset="https://images.unsplash.com/photo-1601972599720-36938d4ecd31?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8aGFuZCUyMGhvbGRpbmclMjBzbWFydHBob25lJTIwYXBwJTIwc2NyZWVufGVufDF8MXx8fDE3OTEyMDk3NzJ8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=310&amp;h=233&amp;q=80 310w, https://images.unsplash.com/photo-1601972599720-36938d4ecd31?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8aGFuZCUyMGhvbGRpbmclMjBzbWFydHBob25lJTIwYXBwJTIwc2NyZWVufGVufDF8MXx8fDE3OTEyMDk3NzJ8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=300&amp;q=80 400w, https://images.unsplash.com/photo-1601972599720-36938d4ecd31?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8aGFuZCUyMGhvbGRpbmclMjBzbWFydHBob25lJTIwYXBwJTIwc2NyZWVufGVufDF8MXx8fDE3OTEyMDk3NzJ8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=640&amp;h=480&amp;q=80 640w, https://images.unsplash.com/photo-1601972599720-36938d4ecd31?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8aGFuZCUyMGhvbGRpbmclMjBzbWFydHBob25lJTIwYXBwJTIwc2NyZWVufGVufDF8MXx8fDE3OTEyMDk3NzJ8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=960&amp;h=720&amp;q=80 960w, https://images.unsplash.com/photo-1601972599720-36938d4ecd31?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8aGFuZCUyMGhvbGRpbmclMjBzbWFydHBob25lJTIwYXBwJTIwc2NyZWVufGVufDF8MXx8fDE3OTEyMDk3NzJ8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1200&amp;h=900&amp;q=80 1200w" sizes="(max-width: 767px) 82vw, 47vw" style="background:#c0c0c0" src="https://images.unsplash.com/photo-1601972599720-36938d4ecd31?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8aGFuZCUyMGhvbGRpbmclMjBzbWFydHBob25lJTIwYXBwJTIwc2NyZWVufGVufDF8MXx8fDE3OTEyMDk3NzJ8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1200&amp;h=900&amp;q=80" width="1200" height="900" alt="A hand holding a phone that shows a food ordering app" loading="lazy"></div>
+      <span class="service__shade" aria-hidden="true"></span>
+    </li>
+    <li class="service m-surface">
+      <div class="service__text">
+        <h3 class="m-text-4">Campaigns and content</h3>
+        <p class="m-text-5 service__line">Ideas sized for culture and planned like a product roadmap, so the second month is better than the first.</p>
+        <ul class="service__tags"><li class="m-badge">Campaigns</li><li class="m-badge">Social</li><li class="m-badge">Film and photo</li><li class="m-badge">Media planning</li></ul>
+      </div>
+      <div class="service__media" data-8b-motion="iris"><img srcset="https://images.unsplash.com/photo-1720175646447-e37d994007fc?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8YmlsbGJvYXJkJTIwY2l0eSUyMHN0cmVldCUyMHBvc3RlcnxlbnwxfDF8fHwxNzkxMjA5NzUxfDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=310&amp;h=233&amp;q=80 310w, https://images.unsplash.com/photo-1720175646447-e37d994007fc?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8YmlsbGJvYXJkJTIwY2l0eSUyMHN0cmVldCUyMHBvc3RlcnxlbnwxfDF8fHwxNzkxMjA5NzUxfDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=300&amp;q=80 400w, https://images.unsplash.com/photo-1720175646447-e37d994007fc?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8YmlsbGJvYXJkJTIwY2l0eSUyMHN0cmVldCUyMHBvc3RlcnxlbnwxfDF8fHwxNzkxMjA5NzUxfDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=640&amp;h=480&amp;q=80 640w, https://images.unsplash.com/photo-1720175646447-e37d994007fc?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8YmlsbGJvYXJkJTIwY2l0eSUyMHN0cmVldCUyMHBvc3RlcnxlbnwxfDF8fHwxNzkxMjA5NzUxfDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=960&amp;h=720&amp;q=80 960w, https://images.unsplash.com/photo-1720175646447-e37d994007fc?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8YmlsbGJvYXJkJTIwY2l0eSUyMHN0cmVldCUyMHBvc3RlcnxlbnwxfDF8fHwxNzkxMjA5NzUxfDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1200&amp;h=900&amp;q=80 1200w" sizes="(max-width: 767px) 82vw, 47vw" style="background:#262626" src="https://images.unsplash.com/photo-1720175646447-e37d994007fc?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8YmlsbGJvYXJkJTIwY2l0eSUyMHN0cmVldCUyMHBvc3RlcnxlbnwxfDF8fHwxNzkxMjA5NzUxfDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1200&amp;h=900&amp;q=80" width="1200" height="900" alt="A large advertisement on the side of a city building" loading="lazy"></div>
+      <span class="service__shade" aria-hidden="true"></span>
+    </li>
+    <li class="service m-surface">
+      <div class="service__text">
+        <h3 class="m-text-4">Service design</h3>
+        <p class="m-text-5 service__line">Every moment between a person and your company, mapped, prototyped and made a little easier.</p>
+        <ul class="service__tags"><li class="m-badge">Research</li><li class="m-badge">Journey mapping</li><li class="m-badge">Blueprints</li><li class="m-badge">Prototyping</li></ul>
+      </div>
+      <div class="service__media" data-8b-motion="iris"><img srcset="https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8d29ya3Nob3AlMjBzdGlja3klMjBub3RlcyUyMHdhbGx8ZW58MXwwfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=310&amp;h=233&amp;q=80 310w, https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8d29ya3Nob3AlMjBzdGlja3klMjBub3RlcyUyMHdhbGx8ZW58MXwwfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=300&amp;q=80 400w, https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8d29ya3Nob3AlMjBzdGlja3klMjBub3RlcyUyMHdhbGx8ZW58MXwwfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=640&amp;h=480&amp;q=80 640w, https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8d29ya3Nob3AlMjBzdGlja3klMjBub3RlcyUyMHdhbGx8ZW58MXwwfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=960&amp;h=720&amp;q=80 960w, https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8d29ya3Nob3AlMjBzdGlja3klMjBub3RlcyUyMHdhbGx8ZW58MXwwfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1200&amp;h=900&amp;q=80 1200w" sizes="(max-width: 767px) 82vw, 47vw" style="background:#c0c0d9" src="https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8d29ya3Nob3AlMjBzdGlja3klMjBub3RlcyUyMHdhbGx8ZW58MXwwfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1200&amp;h=900&amp;q=80" width="1200" height="900" alt="A wall of printed sticky notes from a research workshop" loading="lazy"></div>
+      <span class="service__shade" aria-hidden="true"></span>
+    </li>
+    <li class="service m-surface">
+      <div class="service__text">
+        <h3 class="m-text-4">Applied AI</h3>
+        <p class="m-text-5 service__line">Tools your teams use on Monday morning, not a demo for the board.</p>
+        <ul class="service__tags"><li class="m-badge">Opportunity mapping</li><li class="m-badge">Prototypes</li><li class="m-badge">Assistants</li><li class="m-badge">Team training</li></ul>
+      </div>
+      <div class="service__media" data-8b-motion="iris"><img srcset="https://images.unsplash.com/photo-1769675353367-e581059c7c43?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8YWJzdHJhY3QlMjBsaWdodCUyMHRyYWlscyUyMGRhcmslMjB2aW9sZXR8ZW58MXwwfHx8MTc5MTIwOTc3M3ww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=310&amp;h=233&amp;q=80 310w, https://images.unsplash.com/photo-1769675353367-e581059c7c43?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8YWJzdHJhY3QlMjBsaWdodCUyMHRyYWlscyUyMGRhcmslMjB2aW9sZXR8ZW58MXwwfHx8MTc5MTIwOTc3M3ww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=300&amp;q=80 400w, https://images.unsplash.com/photo-1769675353367-e581059c7c43?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8YWJzdHJhY3QlMjBsaWdodCUyMHRyYWlscyUyMGRhcmslMjB2aW9sZXR8ZW58MXwwfHx8MTc5MTIwOTc3M3ww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=640&amp;h=480&amp;q=80 640w, https://images.unsplash.com/photo-1769675353367-e581059c7c43?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8YWJzdHJhY3QlMjBsaWdodCUyMHRyYWlscyUyMGRhcmslMjB2aW9sZXR8ZW58MXwwfHx8MTc5MTIwOTc3M3ww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=960&amp;h=720&amp;q=80 960w, https://images.unsplash.com/photo-1769675353367-e581059c7c43?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8YWJzdHJhY3QlMjBsaWdodCUyMHRyYWlscyUyMGRhcmslMjB2aW9sZXR8ZW58MXwwfHx8MTc5MTIwOTc3M3ww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1200&amp;h=900&amp;q=80 1200w" sizes="(max-width: 767px) 82vw, 47vw" style="background:#260c40" src="https://images.unsplash.com/photo-1769675353367-e581059c7c43?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8YWJzdHJhY3QlMjBsaWdodCUyMHRyYWlscyUyMGRhcmslMjB2aW9sZXR8ZW58MXwwfHx8MTc5MTIwOTc3M3ww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1200&amp;h=900&amp;q=80" width="1200" height="900" alt="Violet light trails curving across a dark background" loading="lazy"></div>
+      <span class="service__shade" aria-hidden="true"></span>
+    </li>
+  </ol>
+</section>
+
+<!-- method: process: four steps beside a ring the scroll draws round (demo: Listen, Make, Measure, Again) (animation: scene:method) -->
+<section id="method" data-8b-section="method" aria-labelledby="method-title">
+  <div class="method__head">
+    <h2 class="m-text-3" id="method-title" data-8b-motion="rise">How we work<span class="m-dot" aria-hidden="true"></span></h2>
+    <p class="m-text-5 method__lead" data-8b-motion="ink">Every project runs the same loop of four steps. The fourth is the one most studios skip, and it is where the best work happens.</p>
+  </div>
+  <div class="method__body">
+    <div class="method__ring" aria-hidden="true">
+      <svg class="method__svg" viewBox="0 0 400 400"><circle class="method__track" cx="200" cy="200" r="170"/><circle class="method__arc" cx="200" cy="200" r="170" pathLength="1" stroke-dasharray="1 1" stroke-dashoffset="0"/></svg>
+      <span class="method__station" style="--x:0;--y:-1"></span>
+      <span class="method__station" style="--x:1;--y:0"></span>
+      <span class="method__station" style="--x:0;--y:1"></span>
+      <span class="method__station" style="--x:-1;--y:0"></span>
+      <span class="method__arm"><span class="method__runner"></span></span>
+    </div>
+    <ol class="method__steps">
+      <li class="step"><h3 class="m-text-4">Listen</h3><p class="m-text-5 step__text">Two weeks with your customers, your data and your front line before we draw anything at all.</p></li>
+      <li class="step"><h3 class="m-text-4">Make</h3><p class="m-text-5 step__text">Small mixed teams ship real, testable things early: in days, not quarters, and in front of real people.</p></li>
+      <li class="step"><h3 class="m-text-4">Measure</h3><p class="m-text-5 step__text">We agree on what better looks like before we start, then report it honestly, good news or not.</p></li>
+      <li class="step"><h3 class="m-text-4">Again</h3><p class="m-text-5 step__text">We take what we learned and go round once more. It is not the end of the project. It is the job.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- studio: team and careers: photo collage that deals out from a pile, with open roles (animation: scene:studio) -->
+<section id="studio" data-8b-section="studio" aria-labelledby="studio-title">
+  <div class="studio__head">
+    <h2 class="m-text-3" id="studio-title">Inside the studio<span class="m-dot" aria-hidden="true"></span></h2>
+    <p class="m-text-5 studio__lead" data-8b-motion="ink">Ninety people between Lisbon and Brooklyn: strategists, designers, engineers and writers who would rather show you than tell you. We work in small mixed teams, sit with the people we build for, and keep Friday afternoons for our own experiments.</p>
+  </div>
+  <div class="studio__collage">
+    <figure class="shot shot--wide"><img srcset="https://images.unsplash.com/photo-1787647559705-d2ad3322020e?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8Y3JlYXRpdmUlMjB0ZWFtJTIwbWVldGluZyUyMHN0dWRpb3xlbnwxfDB8fHwxNzkxMjA5NzQ5fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=350&amp;h=233&amp;q=80 350w, https://images.unsplash.com/photo-1787647559705-d2ad3322020e?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8Y3JlYXRpdmUlMjB0ZWFtJTIwbWVldGluZyUyMHN0dWRpb3xlbnwxfDB8fHwxNzkxMjA5NzQ5fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=410&amp;h=273&amp;q=80 410w, https://images.unsplash.com/photo-1787647559705-d2ad3322020e?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8Y3JlYXRpdmUlMjB0ZWFtJTIwbWVldGluZyUyMHN0dWRpb3xlbnwxfDB8fHwxNzkxMjA5NzQ5fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=690&amp;h=460&amp;q=80 690w, https://images.unsplash.com/photo-1787647559705-d2ad3322020e?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8Y3JlYXRpdmUlMjB0ZWFtJTIwbWVldGluZyUyMHN0dWRpb3xlbnwxfDB8fHwxNzkxMjA5NzQ5fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=960&amp;h=640&amp;q=80 960w" sizes="(max-width: 767px) 91vw, 32vw" style="background:#8c8c8c" src="https://images.unsplash.com/photo-1787647559705-d2ad3322020e?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8Y3JlYXRpdmUlMjB0ZWFtJTIwbWVldGluZyUyMHN0dWRpb3xlbnwxfDB8fHwxNzkxMjA5NzQ5fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1400&amp;h=933&amp;q=80" width="1400" height="933" alt="A team working together around a desk in a colourful studio" loading="lazy"></figure>
+    <figure class="shot shot--tall"><img srcset="https://images.unsplash.com/photo-1643373977342-73cfc7cc0c5e?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8cGVvcGxlJTIwbGF1Z2hpbmclMjBvZmZpY2V8ZW58MXwxfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=170&amp;h=227&amp;q=80 170w, https://images.unsplash.com/photo-1643373977342-73cfc7cc0c5e?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8cGVvcGxlJTIwbGF1Z2hpbmclMjBvZmZpY2V8ZW58MXwxfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=230&amp;h=307&amp;q=80 230w, https://images.unsplash.com/photo-1643373977342-73cfc7cc0c5e?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8cGVvcGxlJTIwbGF1Z2hpbmclMjBvZmZpY2V8ZW58MXwxfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=340&amp;h=453&amp;q=80 340w, https://images.unsplash.com/photo-1643373977342-73cfc7cc0c5e?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8cGVvcGxlJTIwbGF1Z2hpbmclMjBvZmZpY2V8ZW58MXwxfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=533&amp;q=80 400w, https://images.unsplash.com/photo-1643373977342-73cfc7cc0c5e?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8cGVvcGxlJTIwbGF1Z2hpbmclMjBvZmZpY2V8ZW58MXwxfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=640&amp;h=853&amp;q=80 640w" sizes="(max-width: 767px) 44vw, 18vw" style="background:#f3c0a6" src="https://images.unsplash.com/photo-1643373977342-73cfc7cc0c5e?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8cGVvcGxlJTIwbGF1Z2hpbmclMjBvZmZpY2V8ZW58MXwxfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=900&amp;h=1200&amp;q=80" width="900" height="1200" alt="Two colleagues laughing together on a blue chair" loading="lazy"></figure>
+    <figure class="shot shot--tall"><img srcset="https://images.unsplash.com/photo-1745434159123-4908d0b9df94?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8cGVvcGxlJTIwbGF1Z2hpbmclMjBvZmZpY2V8ZW58MXwxfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=170&amp;h=227&amp;q=80 170w, https://images.unsplash.com/photo-1745434159123-4908d0b9df94?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8cGVvcGxlJTIwbGF1Z2hpbmclMjBvZmZpY2V8ZW58MXwxfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=240&amp;h=320&amp;q=80 240w, https://images.unsplash.com/photo-1745434159123-4908d0b9df94?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8cGVvcGxlJTIwbGF1Z2hpbmclMjBvZmZpY2V8ZW58MXwxfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=340&amp;h=453&amp;q=80 340w, https://images.unsplash.com/photo-1745434159123-4908d0b9df94?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8cGVvcGxlJTIwbGF1Z2hpbmclMjBvZmZpY2V8ZW58MXwxfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=533&amp;q=80 400w, https://images.unsplash.com/photo-1745434159123-4908d0b9df94?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8cGVvcGxlJTIwbGF1Z2hpbmclMjBvZmZpY2V8ZW58MXwxfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=640&amp;h=853&amp;q=80 640w" sizes="(max-width: 767px) 44vw, 19vw" style="background:#a68c73" src="https://images.unsplash.com/photo-1745434159123-4908d0b9df94?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8cGVvcGxlJTIwbGF1Z2hpbmclMjBvZmZpY2V8ZW58MXwxfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=900&amp;h=1200&amp;q=80" width="900" height="1200" alt="A smiling designer standing in front of a warm wall" loading="lazy"></figure>
+    <figure class="shot shot--wide"><img srcset="https://images.unsplash.com/photo-1787647560262-ebfcf6c5f979?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8Y3JlYXRpdmUlMjB0ZWFtJTIwbWVldGluZyUyMHN0dWRpb3xlbnwxfDB8fHwxNzkxMjA5NzQ5fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=350&amp;h=233&amp;q=80 350w, https://images.unsplash.com/photo-1787647560262-ebfcf6c5f979?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8Y3JlYXRpdmUlMjB0ZWFtJTIwbWVldGluZyUyMHN0dWRpb3xlbnwxfDB8fHwxNzkxMjA5NzQ5fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=267&amp;q=80 400w, https://images.unsplash.com/photo-1787647560262-ebfcf6c5f979?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8Y3JlYXRpdmUlMjB0ZWFtJTIwbWVldGluZyUyMHN0dWRpb3xlbnwxfDB8fHwxNzkxMjA5NzQ5fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=490&amp;h=327&amp;q=80 490w, https://images.unsplash.com/photo-1787647560262-ebfcf6c5f979?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8Y3JlYXRpdmUlMjB0ZWFtJTIwbWVldGluZyUyMHN0dWRpb3xlbnwxfDB8fHwxNzkxMjA5NzQ5fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=690&amp;h=460&amp;q=80 690w, https://images.unsplash.com/photo-1787647560262-ebfcf6c5f979?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8Y3JlYXRpdmUlMjB0ZWFtJTIwbWVldGluZyUyMHN0dWRpb3xlbnwxfDB8fHwxNzkxMjA5NzQ5fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=960&amp;h=640&amp;q=80 960w, https://images.unsplash.com/photo-1787647560262-ebfcf6c5f979?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8Y3JlYXRpdmUlMjB0ZWFtJTIwbWVldGluZyUyMHN0dWRpb3xlbnwxfDB8fHwxNzkxMjA5NzQ5fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1280&amp;h=853&amp;q=80 1280w" sizes="(max-width: 767px) 91vw, 38vw" style="background:#737359" src="https://images.unsplash.com/photo-1787647560262-ebfcf6c5f979?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8Y3JlYXRpdmUlMjB0ZWFtJTIwbWVldGluZyUyMHN0dWRpb3xlbnwxfDB8fHwxNzkxMjA5NzQ5fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1400&amp;h=933&amp;q=80" width="1400" height="933" alt="Four people collaborating around a table seen from above" loading="lazy"></figure>
+    <figure class="shot shot--wide"><img srcset="https://images.unsplash.com/photo-1623652653308-d49d335c92eb?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8d29ya3Nob3AlMjBzdGlja3klMjBub3RlcyUyMHdhbGx8ZW58MXwwfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=350&amp;h=233&amp;q=80 350w, https://images.unsplash.com/photo-1623652653308-d49d335c92eb?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8d29ya3Nob3AlMjBzdGlja3klMjBub3RlcyUyMHdhbGx8ZW58MXwwfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=430&amp;h=287&amp;q=80 430w, https://images.unsplash.com/photo-1623652653308-d49d335c92eb?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8d29ya3Nob3AlMjBzdGlja3klMjBub3RlcyUyMHdhbGx8ZW58MXwwfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=690&amp;h=460&amp;q=80 690w, https://images.unsplash.com/photo-1623652653308-d49d335c92eb?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8d29ya3Nob3AlMjBzdGlja3klMjBub3RlcyUyMHdhbGx8ZW58MXwwfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=860&amp;h=573&amp;q=80 860w, https://images.unsplash.com/photo-1623652653308-d49d335c92eb?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8d29ya3Nob3AlMjBzdGlja3klMjBub3RlcyUyMHdhbGx8ZW58MXwwfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=960&amp;h=640&amp;q=80 960w" sizes="(max-width: 767px) 91vw, 34vw" style="background:#a6a6a6" src="https://images.unsplash.com/photo-1623652653308-d49d335c92eb?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8d29ya3Nob3AlMjBzdGlja3klMjBub3RlcyUyMHdhbGx8ZW58MXwwfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1400&amp;h=933&amp;q=80" width="1400" height="933" alt="A team discussing ideas in front of a wall of notes" loading="lazy"></figure>
+    <div class="studio__roles">
+      <h3 class="m-text-7" data-8b-motion="rise">Open roles<span class="m-dot" aria-hidden="true"></span></h3>
+      <ul>
+        <li class="role"><span class="m-text-7">Senior product designer</span><span class="m-text-6 role__place">Lisbon</span></li>
+        <li class="role"><span class="m-text-7">Creative technologist</span><span class="m-text-6 role__place">Brooklyn</span></li>
+        <li class="role"><span class="m-text-7">Strategy director</span><span class="m-text-6 role__place">Remote, Europe</span></li>
+      </ul>
+      <a data-8b-placeholder="email" class="m-link" href="mailto:careers@onda.example"><span class="m-link__label">careers@onda.example</span><svg class="m-link__arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- journal: news and articles: four stories beside a sticky photo frame (animation: scene:journal) -->
+<section id="journal" data-8b-section="journal" aria-labelledby="journal-title">
+  <div class="journal__head">
+    <h2 class="m-text-3" id="journal-title" data-8b-motion="rise">Ideas and news<span class="m-dot" aria-hidden="true"></span></h2>
+  </div>
+  <div class="journal__body">
+    <div class="journal__frame">
+      <img srcset="https://images.unsplash.com/photo-1769755409781-9e8924c57362?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8Y29uZmVyZW5jZSUyMHN0YWdlJTIwYXVkaWVuY2UlMjBsaWdodHN8ZW58MXwwfHx8MTc5MTIwOTc3M3ww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=350&amp;h=438&amp;q=80 350w, https://images.unsplash.com/photo-1769755409781-9e8924c57362?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8Y29uZmVyZW5jZSUyMHN0YWdlJTIwYXVkaWVuY2UlMjBsaWdodHN8ZW58MXwwfHx8MTc5MTIwOTc3M3ww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=500&amp;q=80 400w, https://images.unsplash.com/photo-1769755409781-9e8924c57362?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8Y29uZmVyZW5jZSUyMHN0YWdlJTIwYXVkaWVuY2UlMjBsaWdodHN8ZW58MXwwfHx8MTc5MTIwOTc3M3ww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=510&amp;h=638&amp;q=80 510w, https://images.unsplash.com/photo-1769755409781-9e8924c57362?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8Y29uZmVyZW5jZSUyMHN0YWdlJTIwYXVkaWVuY2UlMjBsaWdodHN8ZW58MXwwfHx8MTc5MTIwOTc3M3ww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=690&amp;h=863&amp;q=80 690w, https://images.unsplash.com/photo-1769755409781-9e8924c57362?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8Y29uZmVyZW5jZSUyMHN0YWdlJTIwYXVkaWVuY2UlMjBsaWdodHN8ZW58MXwwfHx8MTc5MTIwOTc3M3ww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1000&amp;h=1250&amp;q=80 1000w" sizes="(max-width: 767px) 91vw, 39vw" style="background:#260c0c" class="journal__shot" src="https://images.unsplash.com/photo-1769755409781-9e8924c57362?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8Y29uZmVyZW5jZSUyMHN0YWdlJTIwYXVkaWVuY2UlMjBsaWdodHN8ZW58MXwwfHx8MTc5MTIwOTc3M3ww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1000&amp;h=1250&amp;q=80" width="1000" height="1250" alt="A speaker on a stage addressing a large audience in a dim hall" loading="lazy">
+      <img srcset="https://images.unsplash.com/photo-1783094269325-4ba186e8e01b?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8c2VydmljZSUyMGRlc2slMjBjdXN0b21lciUyMHNtaWxpbmd8ZW58MXwwfHx8MTc5MTIwOTc3NXww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=350&amp;h=438&amp;q=80 350w, https://images.unsplash.com/photo-1783094269325-4ba186e8e01b?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8c2VydmljZSUyMGRlc2slMjBjdXN0b21lciUyMHNtaWxpbmd8ZW58MXwwfHx8MTc5MTIwOTc3NXww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=500&amp;q=80 400w, https://images.unsplash.com/photo-1783094269325-4ba186e8e01b?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8c2VydmljZSUyMGRlc2slMjBjdXN0b21lciUyMHNtaWxpbmd8ZW58MXwwfHx8MTc5MTIwOTc3NXww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=510&amp;h=638&amp;q=80 510w, https://images.unsplash.com/photo-1783094269325-4ba186e8e01b?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8c2VydmljZSUyMGRlc2slMjBjdXN0b21lciUyMHNtaWxpbmd8ZW58MXwwfHx8MTc5MTIwOTc3NXww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=690&amp;h=863&amp;q=80 690w, https://images.unsplash.com/photo-1783094269325-4ba186e8e01b?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8c2VydmljZSUyMGRlc2slMjBjdXN0b21lciUyMHNtaWxpbmd8ZW58MXwwfHx8MTc5MTIwOTc3NXww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1000&amp;h=1250&amp;q=80 1000w" sizes="(max-width: 767px) 91vw, 39vw" style="background:#f3f3f3" class="journal__shot" src="https://images.unsplash.com/photo-1783094269325-4ba186e8e01b?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8c2VydmljZSUyMGRlc2slMjBjdXN0b21lciUyMHNtaWxpbmd8ZW58MXwwfHx8MTc5MTIwOTc3NXww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1000&amp;h=1250&amp;q=80" width="1000" height="1250" alt="A smiling woman working on a laptop at a bright desk" loading="lazy">
+      <img srcset="https://images.unsplash.com/photo-1581080247486-57989c1f14ab?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8cHJpbnRlZCUyMG1hZ2F6aW5lJTIwcGFnZXMlMjB0eXBvZ3JhcGh5fGVufDF8MHx8fDE3OTEyMDk3NzR8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=350&amp;h=438&amp;q=80 350w, https://images.unsplash.com/photo-1581080247486-57989c1f14ab?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8cHJpbnRlZCUyMG1hZ2F6aW5lJTIwcGFnZXMlMjB0eXBvZ3JhcGh5fGVufDF8MHx8fDE3OTEyMDk3NzR8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=500&amp;q=80 400w, https://images.unsplash.com/photo-1581080247486-57989c1f14ab?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8cHJpbnRlZCUyMG1hZ2F6aW5lJTIwcGFnZXMlMjB0eXBvZ3JhcGh5fGVufDF8MHx8fDE3OTEyMDk3NzR8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=510&amp;h=638&amp;q=80 510w, https://images.unsplash.com/photo-1581080247486-57989c1f14ab?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8cHJpbnRlZCUyMG1hZ2F6aW5lJTIwcGFnZXMlMjB0eXBvZ3JhcGh5fGVufDF8MHx8fDE3OTEyMDk3NzR8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=690&amp;h=863&amp;q=80 690w, https://images.unsplash.com/photo-1581080247486-57989c1f14ab?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8cHJpbnRlZCUyMG1hZ2F6aW5lJTIwcGFnZXMlMjB0eXBvZ3JhcGh5fGVufDF8MHx8fDE3OTEyMDk3NzR8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1000&amp;h=1250&amp;q=80 1000w" sizes="(max-width: 767px) 91vw, 39vw" style="background:#d9a60c" class="journal__shot" src="https://images.unsplash.com/photo-1581080247486-57989c1f14ab?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8cHJpbnRlZCUyMG1hZ2F6aW5lJTIwcGFnZXMlMjB0eXBvZ3JhcGh5fGVufDF8MHx8fDE3OTEyMDk3NzR8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1000&amp;h=1250&amp;q=80" width="1000" height="1250" alt="Bold yellow and blue type printed on a box" loading="lazy">
+      <img srcset="https://images.unsplash.com/photo-1542626991-cbc4e32524cc?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8d29ya3Nob3AlMjBzdGlja3klMjBub3RlcyUyMHdhbGx8ZW58MXwwfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=350&amp;h=438&amp;q=80 350w, https://images.unsplash.com/photo-1542626991-cbc4e32524cc?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8d29ya3Nob3AlMjBzdGlja3klMjBub3RlcyUyMHdhbGx8ZW58MXwwfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=500&amp;q=80 400w, https://images.unsplash.com/photo-1542626991-cbc4e32524cc?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8d29ya3Nob3AlMjBzdGlja3klMjBub3RlcyUyMHdhbGx8ZW58MXwwfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=510&amp;h=638&amp;q=80 510w, https://images.unsplash.com/photo-1542626991-cbc4e32524cc?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8d29ya3Nob3AlMjBzdGlja3klMjBub3RlcyUyMHdhbGx8ZW58MXwwfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=690&amp;h=863&amp;q=80 690w, https://images.unsplash.com/photo-1542626991-cbc4e32524cc?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8d29ya3Nob3AlMjBzdGlja3klMjBub3RlcyUyMHdhbGx8ZW58MXwwfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1000&amp;h=1250&amp;q=80 1000w" sizes="(max-width: 767px) 91vw, 39vw" style="background:#d9c0a6" class="journal__shot" src="https://images.unsplash.com/photo-1542626991-cbc4e32524cc?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8d29ya3Nob3AlMjBzdGlja3klMjBub3RlcyUyMHdhbGx8ZW58MXwwfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1000&amp;h=1250&amp;q=80" width="1000" height="1250" alt="Handwritten sticky notes pinned to a corkboard after a research session" loading="lazy">
+    </div>
+    <ol class="journal__list">
+      <li class="story"><p class="m-text-6 story__meta"><span>Event</span> · <time datetime="2026-10-01">1 October 2026</time> · 2 min read</p><h3 class="m-text-7">Open Studio Night returns to Lisbon on 14 November</h3><p class="m-text story__text">Talks, half-built prototypes and a long table in the old print hall. Bring a friend who makes things.</p></li>
+      <li class="story"><p class="m-text-6 story__meta"><span>Essay</span> · <time datetime="2026-09-18">18 September 2026</time> · 6 min read</p><h3 class="m-text-7">The second visit: why we design for the return, not the launch</h3><p class="m-text story__text">Most products are judged on day one and lost on day thirty. Notes on designing for the ordinary Tuesday.</p></li>
+      <li class="story"><p class="m-text-6 story__meta"><span>Notes</span> · <time datetime="2026-08-30">30 August 2026</time> · 8 min read</p><h3 class="m-text-7">Type, tested: a variable identity that holds up at twelve pixels</h3><p class="m-text story__text">How one variable family carried a bank from a forty-metre billboard to its banking app.</p></li>
+      <li class="story"><p class="m-text-6 story__meta"><span>Research</span> · <time datetime="2026-08-04">4 August 2026</time> · 5 min read</p><h3 class="m-text-7">What three hundred nurses told us about the night shift</h3><p class="m-text story__text">Six weeks of field research for a health partner, and the three things we changed because of it.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- faq: questions and answers (native <details>) -->
+<section id="faq" data-8b-section="faq" aria-labelledby="faq-title">
+  <h2 class="m-text-3 faq__title" id="faq-title" data-8b-motion="rise">Fair questions<span class="m-dot" aria-hidden="true"></span></h2>
+  <div class="faq__list">
+    <details class="faq__item"><summary class="m-text-7">What size of company do you work with?<span class="faq__mark" aria-hidden="true"></span></summary><p class="m-text faq__answer">Mostly companies between fifty and five thousand people, plus a few public bodies. Size matters less than whether the people who decide are in the room.</p></details>
+    <details class="faq__item"><summary class="m-text-7">How does a project usually start?<span class="faq__mark" aria-hidden="true"></span></summary><p class="m-text faq__answer">With a two-week listening sprint: interviews, data and a day on your front line. You get a short written point of view and a plan before any big commitment.</p></details>
+    <details class="faq__item"><summary class="m-text-7">Do you work alongside in-house teams?<span class="faq__mark" aria-hidden="true"></span></summary><p class="m-text faq__answer">Almost always. We pair with your designers, engineers and marketers, and we hand over every system we build so you are never stuck with us. Most partners keep us around anyway.</p></details>
+    <details class="faq__item"><summary class="m-text-7">How do you price the work?<span class="faq__mark" aria-hidden="true"></span></summary><p class="m-text faq__answer">Fixed fees for defined phases, then a monthly team for ongoing work. We are open about our rates on the first call.</p></details>
+    <details class="faq__item"><summary class="m-text-7">Where are you based?<span class="faq__mark" aria-hidden="true"></span></summary><p class="m-text faq__answer">Lisbon and Brooklyn, with people working remotely across Europe and the US east coast. We travel for workshops and launches.</p></details>
+  </div>
+</section>
+
+<!-- contact: violet contact field: big "Let's talk", email, two offices with phones, and a form (placeholders) (animation: scene:contact) -->
+<section id="contact" data-8b-section="contact" aria-labelledby="contact-title">
+  <h2 class="m-text-3 contact__title" id="contact-title" style="--len:10"><span class="contact__voice">Let's talk</span><span class="m-dot" aria-hidden="true"></span></h2>
+  <div class="contact__grid">
+    <div class="contact__info">
+      <p class="m-text-5 contact__lead">Tell us what you are making. A real person reads every message and replies within two working days.</p>
+      <a data-8b-placeholder="email" class="contact__mail" href="mailto:hello@onda.example"><span>hello@onda.example</span></a>
+      <dl class="contact__places">
+        <div><dt class="m-text-7">Lisbon</dt><dd class="m-text">Rua do Exemplo 1<br>1200-000 Lisbon</dd><dd class="m-text"><a data-8b-placeholder="phone" href="tel:+351210000000">+351 210 000 000</a></dd></div>
+        <div><dt class="m-text-7">Brooklyn</dt><dd class="m-text">100 Example Street<br>Brooklyn, NY 11200</dd><dd class="m-text"><a data-8b-placeholder="phone" href="tel:+17180000000">+1 718 000 0000</a></dd></div>
+      </dl>
+    </div>
+    <form data-8b-placeholder="form" class="contact__form m-surface" novalidate>
+      <div class="contact__pair">
+        <label class="m-text-6">Your name<input class="m-field" name="name" type="text" autocomplete="name" required></label>
+        <label class="m-text-6">Email<input class="m-field" name="email" type="email" autocomplete="email" required></label>
+      </div>
+      <div class="contact__pair">
+        <label class="m-text-6">Company<input class="m-field" name="company" type="text" autocomplete="organization"></label>
+        <label class="m-text-6">What can we help with?<select class="m-field" name="topic"><option>A new brand</option><option>A product or app</option><option>A campaign</option><option>Something else</option></select></label>
+      </div>
+      <label class="m-text-6">A few words about the project<textarea class="m-field" name="message" rows="3" required></textarea></label>
+      <div class="contact__actions">
+        <button class="m-btn" type="submit"><span class="m-btn__label">Send message</span></button>
+        <p class="m-text contact__status" role="status" aria-live="polite" data-success="Thank you. We will reply within two working days." data-error="Please add your name, a valid email and a few words about the project."></p>
+      </div>
+    </form>
+  </div>
+</section>
+</main>
+
+<!-- footer: closing greeting "Bye" with the round photo full stop, link columns, newsletter, copyright and the Design: 8B credit (animation: scene:footer) -->
+<footer id="footer" data-8b-section="footer">
+  <p class="m-text-2 footer__bye" style="--len:3"><span class="footer__word">Bye</span><span class="footer__period" aria-hidden="true"><span class="footer__aperture"><img srcset="https://images.unsplash.com/photo-1754738381783-f9a2847bfef2?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8cHVycGxlJTIwYWJzdHJhY3QlMjAzZCUyMHNoYXBlfGVufDF8Mnx8fDE3OTEyMDk2Mjd8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=280&amp;h=280&amp;q=68 280w, https://images.unsplash.com/photo-1754738381783-f9a2847bfef2?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8cHVycGxlJTIwYWJzdHJhY3QlMjAzZCUyMHNoYXBlfGVufDF8Mnx8fDE3OTEyMDk2Mjd8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=400&amp;q=68 400w, https://images.unsplash.com/photo-1754738381783-f9a2847bfef2?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8cHVycGxlJTIwYWJzdHJhY3QlMjAzZCUyMHNoYXBlfGVufDF8Mnx8fDE3OTEyMDk2Mjd8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=470&amp;h=470&amp;q=68 470w, https://images.unsplash.com/photo-1754738381783-f9a2847bfef2?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8cHVycGxlJTIwYWJzdHJhY3QlMjAzZCUyMHNoYXBlfGVufDF8Mnx8fDE3OTEyMDk2Mjd8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=560&amp;h=560&amp;q=68 560w, https://images.unsplash.com/photo-1754738381783-f9a2847bfef2?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8cHVycGxlJTIwYWJzdHJhY3QlMjAzZCUyMHNoYXBlfGVufDF8Mnx8fDE3OTEyMDk2Mjd8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=640&amp;h=640&amp;q=68 640w, https://images.unsplash.com/photo-1754738381783-f9a2847bfef2?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8cHVycGxlJTIwYWJzdHJhY3QlMjAzZCUyMHNoYXBlfGVufDF8Mnx8fDE3OTEyMDk2Mjd8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=960&amp;h=960&amp;q=68 960w" sizes="(max-width: 767px) 74vw, 36vw" style="background:#590ca6 url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wCEAAYHBwkLCQwNDQwQERAREBgWFBQWGCMZGxkbGSM1ISchISchNS85LysvOS9UQjs7QlRhUk5SYXZpaXaUjZTBwf8BBgcHCQsJDA0NDBAREBEQGBYUFBYYIxkbGRsZIzUhJyEhJyE1LzkvKy85L1RCOztCVGFSTlJhdmlpdpSNlMHB///AABEIACAAIAMBIgACEQEDEQH/xABwAAAABwEAAAAAAAAAAAAAAAAAAQIDBAUGBxAAAgIBAwQCAwAAAAAAAAAAAQIDEQAEElEFIUFxEzEiI7EBAQADAQAAAAAAAAAAAAAAAAIAAQUHEQACAgICAwEAAAAAAAAAAAABEQACAxIhUQQiQXH/2gAMAwEAAhEDEQA/AOTxhiaJ81kvqawDU1p1dEFD7Pfk4pI/0Fx3a/rEz1PESIyD4F8Z06vj10txyuJvjENT38gSGkP5tfu8VAsRC/NZTftJH9xxNSzadUjINi2Zj99+PFYHjVlKrd3XvFiwkbIIKXXGQ11KyR9SrpcTiNh3Hg3mn6cySaOWMxmkG68j65RDHGm8SJd0vGE/UwsDLW2wLpdooeAOMeK+r3sSW/yPHdH2MzesUxNwdxywVmMAYej7yLPKJHYkg2cegkVSVYgiQHtjpko7BoEIGSt6shphT//Z) 50% 50% / cover no-repeat" class="footer__img" src="https://images.unsplash.com/photo-1754738381783-f9a2847bfef2?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8cHVycGxlJTIwYWJzdHJhY3QlMjAzZCUyMHNoYXBlfGVufDF8Mnx8fDE3OTEyMDk2Mjd8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1200&amp;h=1200&amp;q=68" width="1200" height="1200" alt=""><span class="footer__tint"></span></span></span></p>
+  <div class="footer__grid">
+    <nav class="footer__col" aria-label="Footer">
+      <p class="m-text-6 footer__label">Explore</p>
+      <a class="m-link-2" href="#work">Work</a>
+      <a class="m-link-2" href="#capabilities">Services</a>
+      <a class="m-link-2" href="#method">Approach</a>
+      <a class="m-link-2" href="#studio">Studio</a>
+      <a class="m-link-2" href="#journal">Journal</a>
+    </nav>
+    <div class="footer__col">
+      <p class="m-text-6 footer__label">Talk</p>
+      <a data-8b-placeholder="email" class="m-link-2" href="mailto:hello@onda.example">hello@onda.example</a>
+      <a data-8b-placeholder="email" class="m-link-2" href="mailto:careers@onda.example">careers@onda.example</a>
+      <a data-8b-placeholder="phone" class="m-link-2" href="tel:+351210000000">+351 210 000 000</a>
+    </div>
+    <div class="footer__col">
+      <p class="m-text-6 footer__label">Follow</p>
+      <a data-8b-placeholder="social" class="m-link-2" href="https://www.instagram.com/">Instagram</a>
+      <a data-8b-placeholder="social" class="m-link-2" href="https://www.linkedin.com/">LinkedIn</a>
+      <a data-8b-placeholder="social" class="m-link-2" href="https://vimeo.com/">Vimeo</a>
+    </div>
+    <form data-8b-placeholder="form" class="footer__news" novalidate>
+      <label class="m-text-7" for="news-email">Onda in your inbox, once a month<span class="m-dot" aria-hidden="true"></span></label>
+      <div class="footer__field">
+        <input class="m-field" id="news-email" name="email" type="email" autocomplete="email" placeholder="Your email" required>
+        <button class="m-icon" type="submit" aria-label="Subscribe"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5"/></svg></button>
+      </div>
+      <p class="m-text-6 footer__note" role="status" aria-live="polite" data-idle="No spam, one email a month, unsubscribe in one click." data-success="You are in. See you next month." data-error="Please enter a valid email address.">No spam, one email a month, unsubscribe in one click.</p>
+    </form>
+  </div>
+  <div class="footer__legal m-text-6"><p>© 2026 Onda Studio · Design: <a href="https://8b.com/" style="color:inherit" data-8b-credit>8B</a></p><p>Made in Lisbon and Brooklyn</p></div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.4/dist/lenis.min.js"></script>
+<script data-8b-part="section-script:navigation">
+(() => {
+  const nav = document.getElementById('navigation');
+  const toggle = nav.querySelector('.nav__menu');
+  const menu = nav.querySelector('.menu');
+  const close = menu.querySelector('.menu__close');
+  const setOpen = open => {
+    menu.hidden = !open;
+    toggle.setAttribute('aria-expanded', String(open));
+    if (open) { window.lenis?.stop(); close.focus(); } else { window.lenis?.start(); toggle.focus(); }
+  };
+  toggle.addEventListener('click', () => setOpen(true));
+  close.addEventListener('click', () => setOpen(false));
+  menu.addEventListener('keydown', event => {
+    if (event.key === 'Escape') setOpen(false);
+    if (event.key !== 'Tab') return;
+    const items = [...menu.querySelectorAll('a, button')];
+    const first = items[0], last = items[items.length - 1];
+    if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+    else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+  });
+  menu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => { menu.hidden = true; toggle.setAttribute('aria-expanded', 'false'); window.lenis?.start(); }));
+})();
+</script>
+<script data-8b-part="section-script:hero">
+(() => {
+  const hero = document.getElementById('hero');
+  if (!('IntersectionObserver' in window)) return;
+  new IntersectionObserver(([entry]) => hero.classList.toggle('is-offscreen', !entry.isIntersecting)).observe(hero);
+})();
+</script>
+<script data-8b-part="motion-queue">
+(() => {
+  'use strict';
+  const fonts = document.fonts ? document.fonts.ready : Promise.resolve();
+  const parsed = document.readyState === 'loading' ? new Promise(resolve => document.addEventListener('DOMContentLoaded', resolve, { once: true })) : Promise.resolve();
+  const ready = () => Promise.all([fonts, parsed]).then(() => firsts);
+  const nextTask = () => window.scheduler?.yield?.() ?? new Promise(resolve => setTimeout(resolve));
+  const refresh = () => {
+    if (typeof window.refreshScroll === 'function') return window.refreshScroll();
+    window.ScrollTrigger?.sort(); window.ScrollTrigger?.refresh();
+  };
+  const run = (setup, name) => {
+    for (const trigger of window.ScrollTrigger?.getAll() || []) if (!trigger.end && window.ScrollTrigger.getAll().includes(trigger)) trigger.refresh(0, 1);
+    const context = window.gsap.context(() => {});
+    const log = new MutationObserver(() => {});
+    log.observe(document.documentElement, { attributes: true, attributeOldValue: true, subtree: true });
+    let failure = null, records;
+    try { context.add(() => { try { setup(); } catch (error) { failure = error; } }); }
+    finally { records = log.takeRecords(); log.disconnect(); }
+    if (!failure) return true;
+    try { context.revert(); } catch (error) { console.error(name, 'revert failed', error); }
+    for (const { target, attributeName, oldValue } of records.reverse()) {
+      const now = target.getAttribute(attributeName);
+      if (oldValue == null) { if (now != null) target.removeAttribute(attributeName); }
+      else if (now !== oldValue) target.setAttribute(attributeName, oldValue);
+    }
+    console.error(name, failure);
+    return false;
+  };
+  let firsts = Promise.resolve(), tail = null, pending = 0, lazy = null, building = 0;
+  window.queueMotion = (setup, { first = false, near, id } = {}) => {
+    if (!window.gsap || typeof setup !== 'function') return;
+    const name = id || document.currentScript?.getAttribute('data-8b-part') || 'motion';
+    if (near instanceof Element && window.IntersectionObserver) {
+      const watch = new IntersectionObserver(entries => {
+        if (!entries.some(entry => entry.isIntersecting)) return;
+        watch.disconnect();
+        building++;
+        lazy = (lazy || ready()).then(nextTask).then(() => run(setup, name)).finally(() => { if (!--building) refresh(); });
+      }, { rootMargin: '100% 0px' });
+      watch.observe(near);
+      return;
+    }
+    if (first) firsts = firsts.then(() => fonts).then(() => { if (!run(setup, name)) refresh(); });
+    else {
+      pending++;
+      tail = (tail || ready()).then(nextTask).then(() => run(setup, name))
+        .finally(() => { if (!--pending) refresh(); });
+    }
+    window.motionReady = Promise.all([firsts, tail]);
+  };
+  window.adjacent = (a, b) => {
+    const order = [...document.querySelectorAll('[data-8b-section]')].filter(section => section.getAttribute('data-8b-section') !== 'navigation').map(section => section.id);
+    return order.indexOf(a) >= 0 && order[order.indexOf(a) + 1] === b;
+  };
+})();
+</script>
+<script data-8b-part="page-init">
+gsap.registerPlugin(ScrollTrigger);
+ScrollTrigger.config({ ignoreMobileResize: true });
+function refreshScroll() {
+  ScrollTrigger.sort();
+  ScrollTrigger.refresh();
+}
+window.refreshScroll = refreshScroll;
+gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+  const nav = document.getElementById('navigation');
+  const lenis = window.lenis = new Lenis({ lerp: 0.09, anchors: { offset: -(nav ? nav.offsetHeight : 0) } });
+  const tick = time => lenis.raf(time * 1000);
+  lenis.on('scroll', ScrollTrigger.update);
+  gsap.ticker.add(tick);
+  gsap.ticker.lagSmoothing(0);
+  return () => { gsap.ticker.remove(tick); gsap.ticker.lagSmoothing(500, 33); lenis.destroy(); window.lenis = null; };
+});
+</script>
+<script data-8b-part="motion">
+const effects = {
+  rise(element, vars = {}) {
+    const dot = element.querySelector('.m-dot');
+    const timeline = gsap.timeline(vars);
+    timeline.fromTo(element, { yPercent: 38, clipPath: 'inset(0% -6% 100% -6%)' }, { yPercent: 0, clipPath: 'inset(-30% -6% -30% -6%)', duration: 0.95, ease: 'expo.out', clearProps: 'clipPath,transform' }, 0);
+    if (dot) timeline.fromTo(dot, { scale: 0, yPercent: -260 }, { scale: 1, yPercent: 0, duration: 0.75, ease: 'back.out(2.2)', clearProps: 'transform' }, 0.42);
+    return timeline;
+  },
+  ink(element, vars = {}) {
+    const words = element.querySelectorAll('.ink__word');
+    return gsap.timeline(vars).fromTo(words, { opacity: 0.16 }, { opacity: 1, duration: 0.3, stagger: 0.06, ease: 'none' });
+  },
+  iris(element, vars = {}) {
+    const image = element.querySelector('img');
+    const timeline = gsap.timeline(vars);
+    timeline.fromTo(element, { clipPath: 'circle(0% at 50% 50%)' }, { clipPath: 'circle(75% at 50% 50%)', duration: 1.15, ease: 'expo.inOut', clearProps: 'clipPath' }, 0);
+    if (image) timeline.fromTo(image, { scale: 1.2 }, { scale: 1, duration: 1.5, ease: 'expo.out', clearProps: 'transform' }, 0.15);
+    return timeline;
+  }
+};
+function layoutBox(element) {
+  let x = 0, y = 0, node = element;
+  while (node) { x += node.offsetLeft; y += node.offsetTop; node = node.offsetParent; }
+  return { x, y, w: element.offsetWidth, h: element.offsetHeight, cx: x + element.offsetWidth / 2, cy: y + element.offsetHeight / 2 };
+}
+function splitWords(element) {
+  const original = element.innerHTML;
+  const walker = document.createTreeWalker(element, NodeFilter.SHOW_TEXT);
+  const nodes = [];
+  while (walker.nextNode()) nodes.push(walker.currentNode);
+  nodes.forEach(node => {
+    const fragment = document.createDocumentFragment();
+    node.textContent.split(/(\s+)/).forEach(part => {
+      if (!part) return;
+      if (/^\s+$/.test(part)) { fragment.append(part); return; }
+      const word = document.createElement('span');
+      word.className = 'ink__word';
+      word.textContent = part;
+      fragment.append(word);
+    });
+    node.replaceWith(fragment);
+  });
+  return () => { element.innerHTML = original; };
+}
+document.querySelectorAll('[data-8b-section]').forEach(section => {
+  const bound = name => [...section.querySelectorAll(`[data-8b-motion~="${name}"]`)];
+  const rise = bound('rise'), ink = bound('ink'), iris = bound('iris');
+  if (!rise.length && !ink.length && !iris.length) return;
+  const first = section.getBoundingClientRect().top < innerHeight;
+  if (rise.length) queueMotion(() => gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    rise.forEach((element, index) => ScrollTrigger.create({ id: `effect:rise:${section.id}:${index}`, trigger: element, start: 'top 88%', once: true, animation: effects.rise(element, { paused: true }) }));
+  }), { first, id: `effect:rise:${section.id}` });
+  if (ink.length) queueMotion(() => gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const reverts = ink.map(splitWords);
+    ink.forEach((element, index) => ScrollTrigger.create({ id: `effect:ink:${section.id}:${index}`, trigger: element, start: 'top 88%', end: 'bottom 68%', scrub: 0.4, animation: effects.ink(element) }));
+    return () => reverts.forEach(revert => revert());
+  }), { first, id: `effect:ink:${section.id}` });
+  if (iris.length) queueMotion(() => gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    iris.forEach((element, index) => ScrollTrigger.create({ id: `effect:iris:${section.id}:${index}`, trigger: element, start: 'top 86%', once: true, animation: effects.iris(element, { paused: true }) }));
+  }), { first, id: `effect:iris:${section.id}` });
+});
+</script>
+<script data-8b-part="scene:hero">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    if (!adjacent('hero', 'statement')) return;
+    const hero = document.getElementById('hero');
+    const target = document.getElementById('statement').querySelector('.statement__dot');
+    const aperture = hero.querySelector('.hero__aperture');
+    const geometry = () => {
+      const from = layoutBox(aperture), to = layoutBox(target);
+      return { x: to.cx - from.cx, y: to.cy - from.cy, scale: to.w / from.w };
+    };
+    gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: { id: 'hero:exit', trigger: hero, start: 'bottom bottom', end: 'bottom 30%', scrub: true, invalidateOnRefresh: true } })
+      .to(aperture, { x: () => geometry().x, y: () => geometry().y, ease: 'power1.inOut', duration: 1 }, 0)
+      .to(aperture, { scale: () => geometry().scale, ease: 'power3.in', duration: 1 }, 0)
+      .to(hero.querySelector('.hero__tint'), { opacity: 1, ease: 'power2.in', duration: 0.6 }, 0.4)
+      .to(hero.querySelector('.hero__orbit'), { opacity: 0, duration: 0.3 }, 0)
+      .to(hero.querySelector('.hero__word'), { xPercent: () => (matchMedia('(min-width: 900px) and (orientation: landscape)').matches ? -14 : 0), ease: 'power1.in', duration: 1 }, 0)
+      .to(hero.querySelector('.hero__intro'), { y: -70, ease: 'power1.in', duration: 1 }, 0);
+  });
+}, { first: true, id: 'scene:hero' });
+</script>
+<script data-8b-part="scene:statement">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const statement = document.getElementById('statement');
+    const lines = statement.querySelectorAll('.statement__line');
+    if (adjacent('hero', 'statement')) {
+      gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: { id: 'statement:entry', trigger: statement, start: 'top bottom', end: 'top 30%', scrub: true } })
+        .fromTo(lines, { yPercent: 85, xPercent: index => (index ? 9 : -6) }, { yPercent: 0, xPercent: 0, duration: 0.8, stagger: 0.12, ease: 'power2.out' }, 0)
+        .fromTo(statement.querySelector('.statement__dot'), { scale: 0 }, { scale: 1, duration: 0.1 }, 0.9);
+    }
+    const items = statement.querySelectorAll('.statement__index li');
+    gsap.from(items, { yPercent: 70, opacity: 0, duration: 0.8, stagger: 0.07, ease: 'expo.out', scrollTrigger: { id: 'statement:index', trigger: statement.querySelector('.statement__index'), start: 'top 85%', once: true } });
+  });
+}, { id: 'scene:statement' });
+</script>
+<script data-8b-part="scene:work">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const work = document.getElementById('work');
+    const track = work.querySelector('.work__track');
+    const frame = work.querySelector('.work__window');
+    work.classList.add('is-track');
+    const stage = work.querySelector('.work__stage');
+    const run = () => Math.max(0, track.offsetWidth - (work.clientWidth - 2 * parseFloat(getComputedStyle(stage).paddingLeft)));
+    const setRun = () => work.style.setProperty('--run', `${Math.round(run())}px`);
+    setRun();
+    ScrollTrigger.addEventListener('refreshInit', setRun);
+    gsap.fromTo(work.querySelector('.work__plate'), { clipPath: 'inset(0% 3.2% 0% 3.2% round 44px)' }, { clipPath: 'inset(0% 0% 0% 0% round 0px)', ease: 'power1.out', scrollTrigger: { id: 'work:plate', trigger: work, start: 'top bottom', end: 'top 15%', scrub: true } });
+    const timeline = gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: { id: 'work', trigger: work, start: 'top top', end: 'bottom bottom', scrub: true, invalidateOnRefresh: true } });
+    timeline.to(track, { x: () => -run() }, 0);
+    work.querySelectorAll('.case__img').forEach(image => timeline.fromTo(image, { xPercent: -5 }, { xPercent: 5 }, 0));
+    if (adjacent('work', 'again')) {
+      const cases = [...track.querySelectorAll('.case')];
+      const radius = () => (innerWidth < 700 ? innerWidth * 2.1 : innerWidth * 0.95);
+      const bend = card => {
+        const offset = layoutBox(frame).x + card.offsetLeft + card.offsetWidth / 2 - run() - innerWidth / 2;
+        const angle = offset / radius();
+        return { x: radius() * Math.sin(angle) - offset, y: radius() * (1 - Math.cos(angle)), rotation: angle * 180 / Math.PI };
+      };
+      const exit = gsap.timeline({ defaults: { ease: 'power1.in' }, scrollTrigger: { id: 'work:exit', trigger: work, start: 'bottom bottom', end: 'bottom 30%', scrub: true, invalidateOnRefresh: true } });
+      exit.to(frame, { x: () => -innerWidth * 0.2, duration: 1 }, 0);
+      cases.forEach(card => exit.to(card, { x: () => bend(card).x, y: () => bend(card).y, rotation: () => bend(card).rotation, duration: 1 }, 0));
+    }
+    return () => { work.classList.remove('is-track'); work.style.removeProperty('--run'); ScrollTrigger.removeEventListener('refreshInit', setRun); };
+  });
+}, { id: 'scene:work' });
+</script>
+<script data-8b-part="scene:again">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const again = document.getElementById('again');
+    const stage = again.querySelector('.again__stage');
+    const head = again.querySelector('.again__head');
+    const swing = again.querySelector('.again__swing');
+    const wheel = again.querySelector('.again__wheel');
+    const cards = [...wheel.querySelectorAll('.partner')];
+    again.classList.add('is-wheel');
+    cards.forEach((card, index) => card.style.setProperty('--i', index));
+    let step = 0, arcTop = 0, radius = 1;
+    const measure = () => {
+      const width = innerWidth, height = stage.offsetHeight;
+      const headBottom = head.offsetTop + head.offsetHeight;
+      const room = height - headBottom - innerHeight * 0.04;
+      const card = Math.max(180, Math.min(width * (width < 700 ? 0.7 : 0.28), (room - 32) / 1.25));
+      arcTop = headBottom + Math.max(28, (room - card * 1.25) * 0.4);
+      radius = Math.max(width * 0.95, card * 3.3);
+      step = 2 * Math.asin((card + Math.max(18, width * 0.024)) / (2 * radius)) * 180 / Math.PI;
+      again.style.setProperty('--card', `${card.toFixed(1)}px`);
+      again.style.setProperty('--radius', `${radius.toFixed(1)}px`);
+      again.style.setProperty('--step', `${step.toFixed(3)}deg`);
+      again.style.setProperty('--arc-top', `${arcTop.toFixed(1)}px`);
+      again.style.setProperty('--spin', `${Math.round(cards.length * innerHeight * 0.42)}px`);
+    };
+    measure();
+    ScrollTrigger.addEventListener('refreshInit', measure);
+    gsap.fromTo(wheel, { rotation: () => step * 0.55 }, { rotation: () => -(cards.length - 0.45) * step, ease: 'none', scrollTrigger: { id: 'again', trigger: again, start: 'top 30%', end: 'bottom bottom', scrub: true, invalidateOnRefresh: true } });
+    if (adjacent('work', 'again')) {
+      gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: { id: 'again:entry', trigger: again, start: 'top bottom', end: 'top 30%', scrub: true, invalidateOnRefresh: true } })
+        .fromTo(swing, { rotation: () => Math.max(4, Math.asin(Math.min(1, innerWidth * 0.3 / radius)) * 180 / Math.PI - step * 0.55) }, { rotation: 0, ease: 'power1.out' }, 0)
+        .fromTo(swing, { y: () => -(arcTop - 40) }, { y: 0, ease: 'power2.in' }, 0)
+        .fromTo(head, { yPercent: 45 }, { yPercent: 0, ease: 'power2.out' }, 0);
+    }
+    return () => {
+      ScrollTrigger.removeEventListener('refreshInit', measure);
+      again.classList.remove('is-wheel');
+      ['--card', '--radius', '--step', '--arc-top', '--spin'].forEach(name => again.style.removeProperty(name));
+      cards.forEach(card => card.style.removeProperty('--i'));
+    };
+  });
+}, { id: 'scene:again' });
+</script>
+<script data-8b-part="scene:capabilities">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('capabilities');
+    const cards = [...section.querySelectorAll('.service')];
+    section.classList.add('is-deck');
+    cards.forEach((card, index) => card.style.setProperty('--i', index));
+    cards.forEach((card, index) => {
+      const next = cards[index + 1];
+      if (!next) return;
+      gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: { id: `capabilities:${index}`, trigger: next, start: 'top bottom', end: () => `top ${parseFloat(getComputedStyle(next).top) || 0}px`, scrub: true, invalidateOnRefresh: true } })
+        .to(card, { scale: 0.9 }, 0)
+        .to(card.querySelector('.service__shade'), { opacity: 0.55 }, 0);
+    });
+    return () => { section.classList.remove('is-deck'); cards.forEach(card => card.style.removeProperty('--i')); };
+  });
+}, { id: 'scene:capabilities' });
+</script>
+<script data-8b-part="scene:method">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const method = document.getElementById('method');
+    const steps = [...method.querySelectorAll('.step')];
+    const stations = [...method.querySelectorAll('.method__station')];
+    method.classList.add('is-cycle');
+    const timeline = gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: { id: 'method', trigger: method.querySelector('.method__steps'), start: 'top 62%', end: 'bottom 62%', scrub: true } });
+    timeline.fromTo(method.querySelector('.method__arc'), { attr: { 'stroke-dashoffset': 1 } }, { attr: { 'stroke-dashoffset': 0 }, duration: 1 }, 0)
+      .fromTo(method.querySelector('.method__arm'), { rotation: 0 }, { rotation: 360, duration: 1 }, 0);
+    steps.forEach((step, index) => {
+      const at = index / steps.length;
+      timeline.fromTo(step, { opacity: 0.2 }, { opacity: 1, duration: 0.07 }, Math.max(0, at - 0.03));
+      if (stations[index]) timeline.fromTo(stations[index], { scale: 0.4 }, { scale: 1.35, duration: 0.05, ease: 'back.out(3)' }, at).to(stations[index], { scale: 1, duration: 0.08 }, at + 0.06);
+    });
+    return () => method.classList.remove('is-cycle');
+  });
+}, { id: 'scene:method' });
+</script>
+
+<script data-8b-part="section-script:contact">
+(() => {
+  const form = document.querySelector('#contact .contact__form');
+  const status = form.querySelector('.contact__status');
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    const ok = form.checkValidity();
+    status.textContent = ok ? status.dataset.success : status.dataset.error;
+    if (ok) form.reset();
+    else form.querySelector(':invalid')?.focus();
+  });
+})();
+</script>
+<script data-8b-part="section-script:footer">
+(() => {
+  const footer = document.getElementById('footer');
+  const form = footer.querySelector('.footer__news');
+  const note = form.querySelector('.footer__note');
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    const ok = form.checkValidity();
+    note.textContent = ok ? note.dataset.success : note.dataset.error;
+    if (ok) form.reset();
+  });
+  if ('IntersectionObserver' in window) new IntersectionObserver(([entry]) => footer.classList.toggle('is-offscreen', !entry.isIntersecting)).observe(footer);
+})();
+</script>
+<script data-8b-part="scene:studio">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const collage = document.querySelector('#studio .studio__collage');
+    const shots = [...collage.querySelectorAll('.shot')];
+    const tilt = [-8, 6, -4, 9, -6];
+    const offset = (shot, axis) => {
+      const centre = axis === 'x' ? collage.offsetWidth / 2 : Math.min(collage.offsetHeight / 2, innerHeight * 0.45);
+      const own = axis === 'x' ? shot.offsetLeft + shot.offsetWidth / 2 : shot.offsetTop + shot.offsetHeight / 2;
+      return centre - own;
+    };
+    const timeline = gsap.timeline({ defaults: { ease: 'power2.out' }, scrollTrigger: { id: 'studio', trigger: collage, start: 'top 82%', end: () => (innerWidth < 900 ? 'top 10%' : 'center 55%'), scrub: true, invalidateOnRefresh: true } });
+    shots.forEach((shot, index) => timeline.fromTo(shot, { x: () => offset(shot, 'x'), y: () => offset(shot, 'y'), rotation: tilt[index % tilt.length], scale: 0.66 }, { x: 0, y: 0, rotation: 0, scale: 1, duration: 1 }, (shots.length - 1 - index) * 0.08));
+  });
+}, { id: 'scene:studio' });
+</script>
+<script data-8b-part="scene:journal">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const journal = document.getElementById('journal');
+    const shots = [...journal.querySelectorAll('.journal__shot')];
+    const stories = [...journal.querySelectorAll('.story')];
+    journal.classList.add('is-swap');
+    stories.forEach((story, index) => {
+      const timeline = gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: { id: `journal:${index}`, trigger: story, start: 'top 84%', end: 'top 50%', scrub: true } });
+      timeline.fromTo(story, { opacity: 0.25 }, { opacity: 1, duration: 0.8 }, 0);
+      if (index && shots[index]) timeline.fromTo(shots[index], { clipPath: 'circle(0% at 50% 50%)' }, { clipPath: 'circle(75% at 50% 50%)', ease: 'power1.inOut', duration: 1 }, 0);
+    });
+    return () => journal.classList.remove('is-swap');
+  });
+}, { id: 'scene:journal' });
+</script>
+<script data-8b-part="scene:contact">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const contact = document.getElementById('contact');
+    const voice = contact.querySelector('.contact__voice');
+    gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: { id: 'contact', trigger: contact, start: 'top bottom', end: 'top 15%', scrub: true } })
+      .fromTo(voice, { fontWeight: 400, scale: 0.82, transformOrigin: '0% 100%' }, { fontWeight: 800, scale: 1, duration: 1 }, 0)
+      .fromTo(contact.querySelector('.contact__title .m-dot'), { scale: 0, yPercent: -400 }, { scale: 1, yPercent: 0, duration: 0.25, ease: 'power2.in' }, 0.75);
+  });
+}, { id: 'scene:contact' });
+</script>
+<script data-8b-part="scene:footer">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const footer = document.getElementById('footer');
+    const aperture = footer.querySelector('.footer__aperture');
+    const dot = () => footer.querySelector('.footer__period').offsetWidth / aperture.offsetWidth;
+    gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: { id: 'footer', trigger: footer.querySelector('.footer__bye'), start: 'bottom bottom', end: 'bottom 55%', scrub: true, invalidateOnRefresh: true } })
+      .fromTo(aperture, { scale: dot }, { scale: 1, ease: 'power2.inOut', duration: 1 }, 0)
+      .fromTo(footer.querySelector('.footer__tint'), { opacity: 1 }, { opacity: 0, duration: 0.5 }, 0.45)
+      .fromTo(footer.querySelector('.footer__word'), { yPercent: 30 }, { yPercent: 0, ease: 'power2.out', duration: 0.8 }, 0);
+  });
+}, { id: 'scene:footer' });
+</script>
+
+</body>
+</html>
